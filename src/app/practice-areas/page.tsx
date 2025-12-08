@@ -8,25 +8,33 @@ export default function PracticeAreasPage() {
           Focused Expertise
         </p>
 
-        <h1 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
+        <h1
+          className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl"
+          style={{ fontFamily: "var(--playfair)" }}
+        >
           Practice Areas
         </h1>
 
-        <p className="mt-6 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
-          This is a placeholder page where we&apos;ll bring in the firm&apos;s
-          actual practice area copy and structure it for a small, focused site.
-          Each practice area will have a clear heading and a short description,
-          consistent with the homepage card layout.
+        <p className="mt-5 max-w-2xl text-base text-gray-200/90 leading-relaxed">
+          This page provides an overview of the firm&apos;s core litigation and
+          transactional practice areas. Each section outlines the types of
+          matters the firm handles and offers a brief description of its
+          approach and focus.
         </p>
 
         <div className="my-16 h-px w-full bg-white/10"></div>
-        <div className="mt-8">
+        <div
+          className="mt-12 rounded-lg bg-white/5 p-8 border border-white/10 shadow-lg shadow-black/5
+"
+        >
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
           >
             Commercial Litigation
           </h2>
+
+          <div className="mt-1.5 h-[2px] w-16 bg-[var(--brand-gold)]"></div>
 
           <p className="mt-4 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
             Placeholder description for Commercial Litigation. This will become
@@ -42,13 +50,18 @@ export default function PracticeAreasPage() {
         </div>
 
         <div className="my-16 h-px w-full bg-white/10"></div>
-        <div className="mt-8">
+        <div
+          className="mt-12 rounded-lg bg-white/5 p-8 border border-white/10 shadow-lg shadow-black/5
+"
+        >
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
           >
             Franchise Litigation
           </h2>
+
+          <div className="mt-1.5 h-[2px] w-16 bg-[var(--brand-gold)]"></div>
 
           <p className="mt-4 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
             Placeholder description for Franchise Litigation. This will later
@@ -64,13 +77,18 @@ export default function PracticeAreasPage() {
         </div>
 
         <div className="my-16 h-px w-full bg-white/10"></div>
-        <div className="mt-8">
+        <div
+          className="mt-12 rounded-lg bg-white/5 p-8 border border-white/10 shadow-lg shadow-black/5
+"
+        >
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
           >
             Bankruptcy & Restructuring
           </h2>
+
+          <div className="mt-1.5 h-[2px] w-16 bg-[var(--brand-gold)]"></div>
 
           <p className="mt-4 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
             Placeholder description for Bankruptcy & Restructuring. This
@@ -87,10 +105,15 @@ export default function PracticeAreasPage() {
         </div>
 
         <div className="mt-12 h-px w-full bg-white/10"></div>
-        <div className="mt-8">
+        <div
+          className="mt-12 rounded-lg bg-white/5 p-8 border border-white/10 shadow-lg shadow-black/5
+"
+        >
           <h2 className="text-xl font-semibold">
             Business & Franchise Transactions
           </h2>
+
+          <div className="mt-1.5 h-[2px] w-16 bg-[var(--brand-gold)]"></div>
 
           <p className="mt-4 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
             Placeholder description for Business & Franchise Transactions. This
@@ -107,13 +130,18 @@ export default function PracticeAreasPage() {
         </div>
 
         <div className="my-16 h-px w-full bg-white/10"></div>
-        <div className="mt-8">
+        <div
+          className="mt-12 rounded-lg bg-white/5 p-8 border border-white/10 shadow-lg shadow-black/5
+"
+        >
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
           >
             Civil Litigation
           </h2>
+
+          <div className="mt-1.5 h-[2px] w-16 bg-[var(--brand-gold)]"></div>
 
           <p className="mt-6 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
             Placeholder description for Civil Litigation. This will eventually
