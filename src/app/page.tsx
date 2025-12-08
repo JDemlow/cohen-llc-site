@@ -27,8 +27,15 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Subtle section divider */}
+      <div className="mt-16 h-px w-full bg-white/10"></div>
+
       {/* Practice Areas skeleton */}
       <section className="mt-16">
+        <p className="text-xs uppercase tracking-[0.25em] text-[var(--brand-gold)]">
+          Focused Expertise
+        </p>
+
         <h2 className="text-2xl font-semibold leading-tight sm:text-3xl">
           Practice Areas
         </h2>
@@ -39,13 +46,67 @@ export default function HomePage() {
           specs.
         </p>
 
-        <ul className="mt-6 space-y-2 text-sm text-gray-200/80">
-          <li>• Commercial Litigation</li>
-          <li>• Franchise Litigation</li>
-          <li>• Bankruptcy & Restructuring</li>
-          <li>• Franchise & Business Transactions</li>
-          <li>• Civil Litigation</li>
-        </ul>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-lg bg-[var(--brand-navy)]/40 p-4 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 cursor-pointer">
+            <h3
+              className="text-base font-semibold"
+              style={{ fontFamily: "var(--playfair)" }}
+            >
+              Commercial Litigation
+            </h3>
+            <p className="mt-2 text-sm text-gray-200/80">
+              Placeholder summary we’ll refine later.
+            </p>
+          </div>
+
+          <div className="rounded-lg bg-[var(--brand-navy)]/40 p-4 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 cursor-pointer">
+            <h3
+              className="text-base font-semibold"
+              style={{ fontFamily: "var(--playfair)" }}
+            >
+              Franchise Litigation
+            </h3>
+            <p className="mt-2 text-sm text-gray-200/80">
+              Placeholder summary we’ll refine later.
+            </p>
+          </div>
+
+          <div className="rounded-lg bg-[var(--brand-navy)]/40 p-4 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 cursor-pointer">
+            <h3
+              className="text-base font-semibold"
+              style={{ fontFamily: "var(--playfair)" }}
+            >
+              Bankruptcy & Restructuring
+            </h3>
+            <p className="mt-2 text-sm text-gray-200/80">
+              Placeholder summary we’ll refine later.
+            </p>
+          </div>
+
+          <div className="rounded-lg bg-[var(--brand-navy)]/40 p-4 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 cursor-pointer">
+            <h3
+              className="text-base font-semibold"
+              style={{ fontFamily: "var(--playfair)" }}
+            >
+              Business & Franchise Transactions
+            </h3>
+            <p className="mt-2 text-sm text-gray-200/80">
+              Placeholder summary we’ll refine later.
+            </p>
+          </div>
+
+          <div className="rounded-lg bg-[var(--brand-navy)]/40 p-4 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 cursor-pointer">
+            <h3
+              className="text-base font-semibold"
+              style={{ fontFamily: "var(--playfair)" }}
+            >
+              Civil Litigation
+            </h3>
+            <p className="mt-2 text-sm text-gray-200/80">
+              Placeholder summary we’ll refine later.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   );
