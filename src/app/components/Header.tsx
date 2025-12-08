@@ -4,11 +4,14 @@ export default function Header() {
   return (
     <header className="py-4 border-b border-white/10">
       <nav className="flex items-center justify-between">
-        <div className="text-lg font-semibold">
+        <div
+          className="text-xl font-semibold"
+          style={{ fontFamily: "var(--playfair)" }}
+        >
           <Link href="/">Cohen, LLC</Link>
         </div>
 
-        <ul className="flex gap-6 text-sm">
+        <ul className="flex flex-wrap gap-4 text-xs sm:gap-6 sm:text-sm">
           <li>
             <Link href="/" className="opacity-80 hover:opacity-100 transition">
               Home

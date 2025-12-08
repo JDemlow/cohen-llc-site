@@ -4,6 +4,8 @@
   --brand-charcoal: #1a1d1f;
   --brand-navy: #0a2540;
   --brand-gold: #c6a667;
+
+  --playfair: "Playfair Display";
 }
 
 @theme inline {
@@ -24,4 +26,10 @@ body {
   background: var(--brand-charcoal);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--playfair), serif;
 }
