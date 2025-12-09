@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Playfair_Display } from "next/font/google";
 import Header from "./components/Header";
+import Link from "next/link";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,10 +27,30 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={inter.className}>
         <div className="mx-auto max-w-6xl px-4">
           <Header />
           {children}
+
+          <footer className="mt-24 border-t border-white/10 py-10 text-center text-sm text-gray-300">
+            <div
+              className="font-semibold"
+              style={{ fontFamily: playfair.style.fontFamily }}
+            >
+              Cohen, LLC
+            </div>
+
+            <nav className="mt-3 flex justify-center gap-6 text-xs sm:text-sm">
+              <Link href="/">Home</Link>
+              <Link href="/practice-areas">Practice Areas</Link>
+              <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
+            </nav>
+
+            <p className="mt-4 text-[11px] text-gray-400">
+              © {new Date().getFullYear()} Cohen, LLC. All rights reserved.
+            </p>
+          </footer>
         </div>
       </body>
     </html>
