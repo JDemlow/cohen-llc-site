@@ -24,6 +24,8 @@ export default function AboutPage() {
         </p>
       </section>
 
+      <div className="my-16 h-px w-full bg-white/10"></div>
+
       {/* Lead Attorney Bio */}
       <section className="mt-16 flex flex-col gap-10 sm:flex-row sm:items-start">
         {/* Photo */}
