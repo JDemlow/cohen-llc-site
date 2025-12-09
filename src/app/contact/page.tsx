@@ -38,36 +38,97 @@ export default function ContactPage() {
           </h2>
 
           <p className="mt-3 text-sm text-gray-200/80 leading-relaxed">
-            This placeholder form will be replaced with a functional version.
-            Fields shown here are only structural.
+            Use this form to send a message to the firm. We&apos;ll tailor the
+            final instructions and intake preferences once we receive input from
+            the client.
           </p>
 
           {/* Placeholder form */}
-          <div className="mt-6 space-y-4">
-            <div className="h-12 w-full rounded-md bg-white/5 border border-white/10"></div>
-            <div className="h-12 w-full rounded-md bg-white/5 border border-white/10"></div>
-            <div className="h-12 w-full rounded-md bg-white/5 border border-white/10"></div>
-            <div className="h-32 w-full rounded-md bg-white/5 border border-white/10"></div>
+          <form
+            name="contact"
+            method="POST"
+            action="/contact-success"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            className="mt-6 space-y-4"
+          >
+            {/* Required hidden input for Netlify */}
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="text" name="bot-field" className="hidden" />
 
-            <button className="h-12 w-40 rounded-md bg-[var(--brand-gold)] text-black font-semibold tracking-wide text-sm hover:bg-[var(--brand-gold)]/90 transition">
+            {/* FIRST NAME */}
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-sm text-gray-200/80 mb-1"
+              >
+                Name
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
+                 border border-white/10 focus:border-[var(--brand-gold)] 
+                 focus:outline-none"
+              />
+            </div>
+
+            {/* EMAIL */}
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-sm text-gray-200/80 mb-1"
+              >
+                Email
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
+                 border border-white/10 focus:border-[var(--brand-gold)] 
+                 focus:outline-none"
+              />
+            </div>
+
+            {/* MESSAGE */}
+            <div>
+              <label
+                htmlFor="message"
+                className="block text-sm text-gray-200/80 mb-1"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
+                 border border-white/10 focus:border-[var(--brand-gold)] 
+                 focus:outline-none h-32"
+              ></textarea>
+            </div>
+
+            {/* Compliance Notice */}
+            <p className="text-xs text-gray-400 leading-relaxed">
+              Submitting this form does not create an attorney&ndash;client
+              relationship. Please do not include confidential or
+              time&ndash;sensitive information.
+            </p>
+
+            {/* Submit Button */}
+            <button
+              type="submit"
+              className="mt-4 inline-block rounded-md bg-[var(--brand-gold)] px-8 py-3 
+               text-sm font-semibold tracking-wide text-black transition 
+               hover:bg-[var(--brand-gold)]/90"
+            >
               Submit
             </button>
-          </div>
-
-          {/* Placeholder success / error states (visual only) */}
-          <div className="mt-6 space-y-3 text-sm">
-            <div className="rounded-md border border-emerald-600/50 bg-emerald-900/30 px-4 py-3 text-emerald-100">
-              This is a placeholder for a success message. Once the form is
-              wired up, this area can confirm that a message was sent
-              successfully.
-            </div>
-
-            <div className="rounded-md border border-red-600/40 bg-red-900/30 px-4 py-3 text-red-100">
-              This is a placeholder for an error message. If there is an issue
-              with submission, this area can display a short explanation and
-              next steps.
-            </div>
-          </div>
+          </form>
         </div>
 
         {/* Contact Information */}
