@@ -119,6 +119,26 @@ export default function ContactPage() {
               time&ndash;sensitive information.
             </p>
 
+            {/* Acknowledgment Checkbox */}
+            <div className="flex items-start gap-3 pt-2">
+              <input
+                type="checkbox"
+                name="acknowledge"
+                id="acknowledge"
+                className="mt-1 h-4 w-4 rounded-sm border border-white/20 bg-white/5 text-[var(--brand-gold)] 
+               focus:ring-[var(--brand-gold)]"
+              />
+
+              <label
+                htmlFor="acknowledge"
+                className="text-xs text-gray-300 leading-relaxed cursor-pointer"
+              >
+                I understand that submitting this form does not create an
+                attorney&ndash;client relationship and that no confidential
+                information should be included.
+              </label>
+            </div>
+
             {/* Submit Button */}
             <button
               type="submit"
@@ -129,6 +149,16 @@ export default function ContactPage() {
               Submit
             </button>
           </form>
+          {/* Contact Page Disclaimer */}
+          <div className="mt-10 rounded-lg bg-white/5 border border-white/10 px-6 py-4">
+            <p className="text-xs text-gray-300 leading-relaxed">
+              Information submitted through this form is for general inquiry
+              purposes only and does not create an attorney&ndash;client
+              relationship. Do not include confidential or time&ndash;sensitive
+              information. An attorney will contact you if the firm is able to
+              assist with your matter.
+            </p>
+          </div>
         </div>
 
         {/* Contact Information */}

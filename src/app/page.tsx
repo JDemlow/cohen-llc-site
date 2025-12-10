@@ -6,21 +6,28 @@ export default function HomePage() {
     <main className="py-16">
       <section className="rounded-lg bg-[var(--brand-navy)] px-4 py-16 sm:px-8 sm:py-20">
         <div className="sm:max-w-2xl">
-          <p className="text-xs uppercase tracking-[0.25em] text-[var(--brand-gold)] text-center sm:text-left">
-            Cohen, LLC · Trial & Business Litigation
-          </p>
+          <span className="text-sm font-semibold text-[color:var(--brand-gold)] tracking-wide uppercase">
+            Attorneys and Counselors at Law
+          </span>
 
           <h1
-            className="mt-6 text-4xl font-semibold leading-tight text-center sm:text-left sm:text-5xl"
+            className="mt-4 text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
             style={{ fontFamily: "var(--playfair)" }}
           >
-            Boutique Denver law firm for complex business and franchise
-            disputes.
+            Cohen Trial - The Commercial Litigation Attorneys of Denver
           </h1>
 
-          <p className="mt-6 text-lg text-gray-200/90 leading-relaxed text-center sm:text-left">
-            This is placeholder copy we’ll refine once we shape the final
-            messaging and client specifications.
+          <p className="mt-4 text-sm sm:text-base text-gray-200/90 max-w-2xl">
+            Cohen, LLC is a boutique law firm in Denver representing clients in
+            business, franchise, bankruptcy, and other civil and commercial
+            matters.
+          </p>
+
+          <p className="mt-3 text-sm sm:text-base text-gray-200/90 max-w-2xl">
+            Our trial attorneys have represented hundreds of clients before
+            state and federal courts across the country. We also represent
+            clients in transactional matters including franchising, mergers,
+            acquisitions, and business legal strategy.
           </p>
 
           <div className="mt-8 flex justify-center sm:justify-start">
@@ -50,10 +57,10 @@ export default function HomePage() {
           Practice Areas
         </h2>
 
-        <p className="mt-6 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
-          This is placeholder copy describing the firm&apos;s core focus areas.
-          We&apos;ll replace it with real content based on the final client
-          specs.
+        <p className="mt-3 text-sm sm:text-base text-gray-200/90 max-w-2xl">
+          Our practice areas include bankruptcy and commercial disputes,
+          business and franchise litigation, contract disputes, corporate
+          conflicts, and other civil litigation and transactional matters.
         </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -131,6 +138,58 @@ export default function HomePage() {
               Placeholder summary we’ll refine later.
             </p>
           </Link>
+        </div>
+      </section>
+
+      <section className="mt-16">
+        <h2
+          className="text-2xl sm:text-3xl font-semibold"
+          style={{ fontFamily: "var(--playfair)" }}
+        >
+          Our Team
+        </h2>
+
+        <p className="mt-3 text-sm sm:text-base text-gray-200/90 max-w-2xl">
+          Our attorneys have a variety of backgrounds in business, politics,
+          litigation, and the legal profession.
+        </p>
+
+        <div className="mt-6">
+          <Link
+            href="/contact"
+            className="inline-block rounded-md bg-[var(--brand-gold)] px-8 py-4 text-base font-semibold tracking-wide text-black transition hover:bg-[var(--brand-gold)]/90"
+          >
+            Meet the Team
+          </Link>
+        </div>
+      </section>
+
+      <section className="mt-16">
+        <h2
+          className="text-2xl sm:text-3xl font-semibold"
+          style={{ fontFamily: "var(--playfair)" }}
+        >
+          Recognition
+        </h2>
+
+        <div className="mt-6 rounded-lg bg-[var(--brand-navy)]/40 p-6 border border-white/10 shadow-lg shadow-black/5">
+          <p className="text-sm sm:text-base text-gray-200/90 leading-relaxed">
+            &ldquo;Having seen a number of pleadings in this hard-fought matter,
+            it is the court&apos;s belief that the quality of representation in
+            this matter by both sides is nothing short of exceptional. . . . Mr.
+            Cohen&apos;s resume and experience of 39 years, the numerous complex
+            commercial cases and trials he has participated in, the honors
+            bestowed upon him, and the quality of his clients would reflect he
+            is at or near the top of counsel in his areas of practice.&rdquo;
+          </p>
+
+          <p className="mt-4 text-xs sm:text-sm text-gray-300/80">
+            - G.D. Miller, District Court Judge.{" "}
+            <span className="italic">
+              Creekstone Development Inc. v. Top Down Construction, LLC.
+            </span>{" "}
+            2019CV31796
+          </p>
         </div>
       </section>
     </main>
