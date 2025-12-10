@@ -39,15 +39,19 @@ export default function PracticeAreasPage() {
           <div className="mt-1.5 h-[2px] w-16 bg-[var(--brand-gold)]"></div>
 
           <p className="mt-4 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
-            Placeholder description for Commercial Litigation. This will become
-            a short paragraph summarizing the firm&apos;s approach, typical
-            matters, and key strengths. No styling yet.
+            We represent businesses in complex commercial disputes, including
+            matters involving intellectual property, restructuring, debt
+            recovery, shareholder conflicts, class actions, and municipal
+            finance. Our attorneys handle cases at every stage of litigation in
+            state and federal courts.
           </p>
 
           <ul className="mt-5 list-disc list-inside text-sm text-gray-200/80 space-y-1.5">
-            <li>Placeholder bullet point one</li>
-            <li>Placeholder bullet point two</li>
-            <li>Placeholder bullet point three</li>
+            <li>Intellectual property disputes</li>
+            <li>Class action and mass tort litigation</li>
+            <li>Restructuring and debt recovery matters</li>
+            <li>Shareholder and partnership conflicts</li>
+            <li>Municipal finance litigation</li>
           </ul>
         </div>
 
@@ -67,15 +71,17 @@ export default function PracticeAreasPage() {
           <div className="mt-1.5 h-[2px] w-16 bg-[var(--brand-gold)]"></div>
 
           <p className="mt-4 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
-            Placeholder description for Franchise Litigation. This will later
-            include a short summary of the firm&apos;s litigation strategy,
-            common dispute types, and representative matters.
+            We represent both franchisees and franchisors in disputes involving
+            FDD disclosure requirements, franchise system conflicts, supply
+            chain issues, and multi-plaintiff franchise matters. Our work spans
+            pre-litigation strategy through trial and appeals.
           </p>
 
           <ul className="mt-5 list-disc list-inside text-sm text-gray-200/80 space-y-1.5">
-            <li>Placeholder bullet point one</li>
-            <li>Placeholder bullet point two</li>
-            <li>Placeholder bullet point three</li>
+            <li>FDD disclosure and compliance disputes</li>
+            <li>Franchisee–franchisor conflict resolution</li>
+            <li>Supply chain and vendor-related matters</li>
+            <li>Representation in multi-party franchise actions</li>
           </ul>
         </div>
 
@@ -95,16 +101,18 @@ export default function PracticeAreasPage() {
           <div className="mt-1.5 h-[2px] w-16 bg-[var(--brand-gold)]"></div>
 
           <p className="mt-4 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
-            Placeholder description for Bankruptcy & Restructuring. This
-            paragraph will later describe the firm&apos;s experience with
-            insolvency matters, creditor and debtor representation, structured
-            workouts, and related disputes.
+            We represent both creditors and debtors in business bankruptcy and
+            restructuring matters. Our experience includes Chapter 11
+            reorganizations, structured workouts, and insolvency-related
+            litigation for corporations, partnerships, LLCs, and businesses of
+            all sizes.
           </p>
 
           <ul className="mt-5 list-disc list-inside text-sm text-gray-200/80 space-y-1.5">
-            <li>Placeholder bullet point one</li>
-            <li>Placeholder bullet point two</li>
-            <li>Placeholder bullet point three</li>
+            <li>Creditor and debtor representation</li>
+            <li>Chapter 11 reorganizations and structured workouts</li>
+            <li>Business insolvency strategy and negotiations</li>
+            <li>Disputes arising from financial distress</li>
           </ul>
         </div>
 
@@ -121,16 +129,18 @@ export default function PracticeAreasPage() {
           <div className="mt-1.5 h-[2px] w-16 bg-[var(--brand-gold)]"></div>
 
           <p className="mt-4 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
-            Placeholder description for Business & Franchise Transactions. This
-            will later describe the firm&apos;s experience handling franchise
-            agreements, business formation, operational contracts, and general
-            transactional matters.
+            Our firm drafts and reviews Franchise Disclosure Documents,
+            franchise agreements, and a full range of business contracts. We
+            assist clients with franchise structuring, mergers and acquisitions,
+            operational support, and business divestitures.
           </p>
 
           <ul className="mt-5 list-disc list-inside text-sm text-gray-200/80 space-y-1.5">
-            <li>Placeholder bullet point one</li>
-            <li>Placeholder bullet point two</li>
-            <li>Placeholder bullet point three</li>
+            <li>Drafting and review of FDDs and franchise agreements</li>
+            <li>Franchise structuring and regulatory guidance</li>
+            <li>Mergers and acquisitions support</li>
+            <li>Contractual and operational business counseling</li>
+            <li>Business sales and divestitures</li>
           </ul>
         </div>
 
@@ -150,16 +160,19 @@ export default function PracticeAreasPage() {
           <div className="mt-1.5 h-[2px] w-16 bg-[var(--brand-gold)]"></div>
 
           <p className="mt-6 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
-            Placeholder description for Civil Litigation. This will eventually
-            summarize the types of civil matters the firm handles, such as
-            disputes between individuals or organizations, contract
-            disagreements, and general business-related conflicts.
+            We handle civil disputes between individuals and businesses,
+            including contract disagreements, fraud claims, products liability
+            matters, consumer protection disputes, and professional liability
+            issues. Our attorneys manage cases from early investigation through
+            trial.
           </p>
 
           <ul className="mt-5 list-disc list-inside text-sm text-gray-200/80 space-y-1.5">
-            <li>Placeholder bullet point one</li>
-            <li>Placeholder bullet point two</li>
-            <li>Placeholder bullet point three</li>
+            <li>Contract and business disputes</li>
+            <li>Fraud and misrepresentation matters</li>
+            <li>Products liability litigation</li>
+            <li>Consumer protection claims</li>
+            <li>Professional liability matters</li>
           </ul>
         </div>
 
