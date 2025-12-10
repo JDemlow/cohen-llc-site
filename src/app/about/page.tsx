@@ -1,5 +1,11 @@
 // app/about/page.tsx
 
+export const metadata = {
+  title: "About Our Firm | Cohen, LLC",
+  description:
+    "Learn about Cohen, LLC’s attorneys, backgrounds, philosophy, and decades of experience in business, franchise, bankruptcy, and commercial litigation matters.",
+};
+
 export default function AboutPage() {
   return (
     <main className="py-16">

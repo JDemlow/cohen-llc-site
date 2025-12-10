@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Message Received | Cohen, LLC",
+  description:
+    "Thank you for contacting Cohen, LLC. Your message has been received, and a member of our team will respond shortly regarding your legal matter.",
+};
+
 export default function ContactSuccessPage() {
   return (
     <main className="py-20 text-center">

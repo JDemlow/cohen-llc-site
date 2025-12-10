@@ -1,6 +1,12 @@
 // app/page.tsx
 import Link from "next/link";
 
+export const metadata = {
+  title: "Cohen Trial – The Commercial Litigation Attorneys of Denver",
+  description:
+    "Cohen, LLC is a boutique Denver law firm representing clients in business, franchise, bankruptcy, and complex commercial matters. Our trial attorneys have handled hundreds of cases in state and federal courts across the country.",
+};
+
 export default function HomePage() {
   return (
     <main className="py-16">

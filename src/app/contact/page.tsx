@@ -1,5 +1,11 @@
 // app/contact/page.tsx
 
+export const metadata = {
+  title: "Contact Us | Cohen, LLC",
+  description:
+    "Get in touch with Cohen, LLC regarding business, franchise, bankruptcy, and commercial litigation matters. Use our secure contact form to schedule a consultation.",
+};
+
 export default function ContactPage() {
   return (
     <main className="py-16">

@@ -1,6 +1,12 @@
 // app/practice-areas/page.tsx
 import Link from "next/link";
 
+export const metadata = {
+  title: "Practice Areas | Cohen, LLC",
+  description:
+    "Explore Cohen, LLC’s core practice areas, including commercial litigation, franchise litigation, bankruptcy restructuring, business and franchise transactions, and civil litigation.",
+};
+
 export default function PracticeAreasPage() {
   return (
     <main className="py-16">
