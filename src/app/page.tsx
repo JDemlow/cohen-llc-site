@@ -75,7 +75,9 @@ export default function HomePage() {
               Commercial Litigation
             </h3>
             <p className="mt-2 text-sm text-gray-200/80">
-              Placeholder summary we’ll refine later.
+              Business disputes including intellectual property, restructuring,
+              debt recovery, shareholder conflicts, class actions, and municipal
+              finance.
             </p>
           </Link>
 
@@ -90,7 +92,9 @@ export default function HomePage() {
               Franchise Litigation
             </h3>
             <p className="mt-2 text-sm text-gray-200/80">
-              Placeholder summary we’ll refine later.
+              Representation of franchisees and franchisors in disputes
+              involving FDD laws, franchise conflicts, supply chain issues, and
+              multi-plaintiff matters.
             </p>
           </Link>
 
@@ -105,7 +109,8 @@ export default function HomePage() {
               Bankruptcy & Restructuring
             </h3>
             <p className="mt-2 text-sm text-gray-200/80">
-              Placeholder summary we’ll refine later.
+              Bankruptcy restructuring for corporations, partnerships, LLCs, and
+              businesses of all sizes, representing both creditors and debtors.
             </p>
           </Link>
 
@@ -120,7 +125,8 @@ export default function HomePage() {
               Business & Franchise Transactions
             </h3>
             <p className="mt-2 text-sm text-gray-200/80">
-              Placeholder summary we’ll refine later.
+              Drafting and review of FDDs, franchise structuring, mergers and
+              acquisitions, agreements, business support, and divestitures.
             </p>
           </Link>
 
@@ -135,7 +141,9 @@ export default function HomePage() {
               Civil Litigation
             </h3>
             <p className="mt-2 text-sm text-gray-200/80">
-              Placeholder summary we’ll refine later.
+              Individual and business disputes involving contracts, fraud,
+              products liability, consumer protection, and professional
+              liability.
             </p>
           </Link>
         </div>
