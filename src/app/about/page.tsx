@@ -176,6 +176,9 @@ export default function AboutPage() {
         </p>
       </section>
 
+      {/* Divider */}
+      <div className="my-16 h-px w-full bg-white/10"></div>
+
       {/* Firm History & Mission */}
       <section className="mt-16 rounded-lg bg-[var(--brand-navy)]/5 px-6 py-12">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--brand-gold)] text-center sm:text-left">
