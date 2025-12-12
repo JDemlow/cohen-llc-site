@@ -50,7 +50,7 @@ export default function ContactPage() {
             the client.
           </p>
 
-          {/* Placeholder form */}
+          {/* form */}
           <form
             name="contact"
             method="POST"
@@ -59,15 +59,23 @@ export default function ContactPage() {
             data-netlify-honeypot="bot-field"
             className="mt-6 space-y-4"
           >
-            {/* Required hidden input for Netlify */}
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="text" name="bot-field" className="hidden" />
+            {/* Netlify honeypot field */}
+            <p className="hidden" aria-hidden="true">
+              <label htmlFor="bot-field">Do not fill this field</label>
+              <input
+                id="bot-field"
+                name="bot-field"
+                type="text"
+                autoComplete="off"
+                tabIndex={-1}
+              />
+            </p>
 
-            {/* FIRST NAME */}
+            {/* NAME */}
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm text-gray-200/80 mb-1"
+                className="mb-1 block text-sm text-gray-200/80"
               >
                 Name
               </label>
@@ -75,10 +83,11 @@ export default function ContactPage() {
                 id="name"
                 name="name"
                 type="text"
+                autoComplete="name"
                 required
                 className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-                 border border-white/10 focus:border-[var(--brand-gold)] 
-                 focus:outline-none"
+        border border-white/10 focus:border-[var(--brand-gold)] 
+        focus:outline-none"
               />
             </div>
 
@@ -86,7 +95,7 @@ export default function ContactPage() {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm text-gray-200/80 mb-1"
+                className="mb-1 block text-sm text-gray-200/80"
               >
                 Email
               </label>
@@ -94,10 +103,11 @@ export default function ContactPage() {
                 id="email"
                 name="email"
                 type="email"
+                autoComplete="email"
                 required
                 className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-                 border border-white/10 focus:border-[var(--brand-gold)] 
-                 focus:outline-none"
+        border border-white/10 focus:border-[var(--brand-gold)] 
+        focus:outline-none"
               />
             </div>
 
@@ -105,57 +115,62 @@ export default function ContactPage() {
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm text-gray-200/80 mb-1"
+                className="mb-1 block text-sm text-gray-200/80"
               >
                 Message
               </label>
               <textarea
                 id="message"
                 name="message"
+                rows={5}
                 required
-                className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-                 border border-white/10 focus:border-[var(--brand-gold)] 
-                 focus:outline-none h-32"
-              ></textarea>
+                className="h-32 w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
+        border border-white/10 focus:border-[var(--brand-gold)] 
+        focus:outline-none"
+              />
             </div>
 
             {/* Compliance Notice */}
-            <p className="text-xs text-gray-400 leading-relaxed">
+            <p className="text-xs leading-relaxed text-gray-400">
               Submitting this form does not create an attorney&ndash;client
               relationship. Please do not include confidential or
               time&ndash;sensitive information.
             </p>
 
             {/* Acknowledgment Checkbox */}
-            <div className="flex items-start gap-3 pt-2">
-              <input
-                type="checkbox"
-                name="acknowledge"
-                id="acknowledge"
-                className="mt-1 h-4 w-4 rounded-sm border border-white/20 bg-white/5 text-[var(--brand-gold)] 
-               focus:ring-[var(--brand-gold)]"
-              />
+            <div className="pt-2">
+              <div className="flex items-start gap-3">
+                <input
+                  id="acknowledgment"
+                  name="acknowledgment"
+                  type="checkbox"
+                  required
+                  className="mt-1 h-4 w-4 rounded-sm border border-white/20 bg-white/5 
+          text-[var(--brand-gold)] focus:ring-[var(--brand-gold)]"
+                  aria-describedby="acknowledgment-description"
+                />
 
-              <label
-                htmlFor="acknowledge"
-                className="text-xs text-gray-300 leading-relaxed cursor-pointer"
-              >
-                I understand that submitting this form does not create an
-                attorney&ndash;client relationship and that no confidential
-                information should be included.
-              </label>
+                <div className="text-xs leading-relaxed text-gray-300">
+                  <p id="acknowledgment-description">
+                    I understand that submitting this form does not create an
+                    attorney&ndash;client relationship and that no confidential
+                    information should be included.
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Submit Button */}
             <button
               type="submit"
               className="mt-4 inline-block rounded-md bg-[var(--brand-gold)] px-8 py-3 
-               text-sm font-semibold tracking-wide text-black transition 
-               hover:bg-[var(--brand-gold)]/90"
+      text-sm font-semibold tracking-wide text-black transition 
+      hover:bg-[var(--brand-gold)]/90"
             >
               Submit
             </button>
           </form>
+
           {/* Contact Page Disclaimer */}
           <div className="mt-10 rounded-lg bg-white/5 border border-white/10 px-6 py-4">
             <p className="text-xs text-gray-300 leading-relaxed">
