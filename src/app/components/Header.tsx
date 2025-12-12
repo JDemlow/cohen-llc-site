@@ -69,7 +69,7 @@ export default function Header() {
 
       {/* Mobile nav panel with smooth open/close */}
       <div
-        className={`mt-4 sm:hidden overflow-hidden transition-all duration-200 ${
+        className={`mt-4 sm:hidden overflow-hidden transition-all duration-300 ${
           isOpen ? "opacity-100 max-h-64" : "opacity-0 max-h-0"
         }`}
       >

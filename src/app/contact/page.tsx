@@ -23,9 +23,10 @@ export default function ContactPage() {
         </h1>
 
         <p className="mt-6 max-w-3xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
-          This page will provide a simple contact form and essential details for
-          reaching the firm. We&apos;ll refine the layout and messaging once we
-          receive the client&apos;s preferences for intake and communication.
+          Use the form below to contact Cohen, LLC regarding business,
+          franchise, bankruptcy, or commercial litigation matters. A member of
+          our team will review your message and follow up to discuss your legal
+          needs and next steps.
         </p>
       </section>
 

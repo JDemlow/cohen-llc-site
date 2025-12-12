@@ -23,10 +23,10 @@ export default function PracticeAreasPage() {
         </h1>
 
         <p className="mt-6 max-w-3xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
-          This page provides an overview of the firm&apos;s core litigation and
-          transactional practice areas. Each section outlines the types of
-          matters the firm handles and offers a brief description of its
-          approach and focus.
+          Cohen, LLC represents clients in a broad range of commercial,
+          franchise, bankruptcy, and civil matters. The sections below provide
+          an overview of the firm&apos;s key practice areas and the types of
+          disputes and transactions our attorneys handle.
         </p>
 
         <div className="my-16 h-px w-full bg-white/10"></div>

@@ -23,10 +23,11 @@ export default function AboutPage() {
         </h1>
 
         <p className="mt-6 max-w-3xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
-          This placeholder introduction will eventually describe the firm&apos;s
-          background, philosophy, and approach to handling complex litigation
-          and business matters. The final copy will be informed by the
-          client&apos;s own tone, experience, and values.
+          Cohen, LLC is a Denver-based boutique law firm focused on business,
+          franchise, bankruptcy, and commercial litigation matters. Our
+          attorneys bring extensive experience from private practice, business,
+          and public service, allowing us to guide clients through complex
+          disputes and transactional challenges.
         </p>
       </section>
 
@@ -58,11 +59,12 @@ export default function AboutPage() {
             Managing Partner
           </p>
 
-          <p className="mt-4 max-w-2xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
-            This placeholder biography will eventually be updated with the
-            primary attorney&apos;s background, litigation experience, and areas
-            of focus. The final text will reflect the attorney&apos;s real
-            credentials and representative matters.
+          <p className="mt-3 text-sm text-gray-200/90 leading-relaxed">
+            This biography will highlight the attorney&apos;s background, areas
+            of practice, and experience in commercial litigation, franchise
+            matters, bankruptcy, and related business disputes. Final copy will
+            reflect each attorney&apos;s professional history and
+            accomplishments.
           </p>
 
           <p className="mt-4 max-w-2xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
@@ -100,10 +102,12 @@ export default function AboutPage() {
             Associate Attorney
           </p>
 
-          <p className="mt-4 max-w-2xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
-            This placeholder biography will be customized once the client
-            provides details regarding this attorney&apos;s background, areas of
-            practice, education, and representative matters.
+          <p className="mt-3 text-sm text-gray-200/90 leading-relaxed">
+            This biography will highlight the attorney&apos;s background, areas
+            of practice, and experience in commercial litigation, franchise
+            matters, bankruptcy, and related business disputes. Final copy will
+            reflect each attorney&apos;s professional history and
+            accomplishments.
           </p>
 
           <p className="mt-4 max-w-2xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
@@ -140,11 +144,12 @@ export default function AboutPage() {
             Senior Counsel
           </p>
 
-          <p className="mt-4 max-w-2xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
-            This placeholder biography will be filled in with professional
-            details relating to this attorney&apos;s experience,
-            specializations, and contributions to the firm&apos;s litigation or
-            transactional practice.
+          <p className="mt-3 text-sm text-gray-200/90 leading-relaxed">
+            This biography will highlight the attorney&apos;s background, areas
+            of practice, and experience in commercial litigation, franchise
+            matters, bankruptcy, and related business disputes. Final copy will
+            reflect each attorney&apos;s professional history and
+            accomplishments.
           </p>
 
           <p className="mt-4 max-w-2xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
@@ -159,7 +164,6 @@ export default function AboutPage() {
       <div className="my-16 h-px w-full bg-white/10"></div>
 
       {/* Philosophy / Values */}
-      {/* Philosophy / Values */}
       <section className="mt-12 px-6">
         <h2
           className="text-2xl font-semibold sm:text-3xl"
@@ -167,12 +171,13 @@ export default function AboutPage() {
         >
           Firm Philosophy
         </h2>
-
-        <p className="mt-4 max-w-2xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
-          This area will contain a short statement about the firm&apos;s
-          litigation approach, responsiveness, client service focus, and
-          strategic mindset. We will tailor the content to reflect the
-          firm&apos;s real values.
+        <p className="mt-4 max-w-3xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
+          Our philosophy is grounded in thorough preparation, strategic
+          thinking, and clear communication. We work closely with clients to
+          understand their goals, assess legal risks, and pursue effective
+          solutions through negotiation or litigation. Whether advising on
+          transactions or trying complex cases, we approach each matter with the
+          same level of diligence and care.
         </p>
       </section>
 
@@ -192,12 +197,13 @@ export default function AboutPage() {
           A Focus on Precision, Advocacy, and Results
         </h2>
 
-        <p className="mt-6 max-w-3xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
-          This placeholder section will eventually highlight the firm&apos;s
-          founding story, its guiding principles, and the values that shape its
-          client relationships. The final version may emphasize the firm&apos;s
-          commitment to meticulous preparation, strategic thinking, and
-          delivering practical, results-oriented counsel.
+        <p className="mt-4 max-w-3xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
+          Cohen, LLC was founded to provide high-quality representation to
+          clients facing significant business, commercial, and financial
+          challenges. The firm’s mission is to deliver practical,
+          results-oriented counsel backed by decades of legal experience. We aim
+          to provide clients with clear guidance and unwavering advocacy
+          throughout every stage of their matter.
         </p>
 
         <p className="mt-4 max-w-3xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
