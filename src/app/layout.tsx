@@ -47,7 +47,7 @@ export default function RootLayout({
               <Link href="/contact">Contact</Link>
             </nav>
 
-            <p className="mt-4 max-w-4xl text-xs text-gray-400 leading-relaxed">
+            <p className="mt-4 mx-auto max-w-3xl text-center text-xs leading-relaxed text-gray-400">
               The information on this website is provided for general
               informational purposes only and does not constitute legal advice.
               Viewing this site or contacting Cohen, LLC through this website
