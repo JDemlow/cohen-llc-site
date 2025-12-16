@@ -29,7 +29,6 @@
 body {
   background-color: var(--brand-charcoal);
   color: white;
-  font-family: var(--inter), sans-serif;
 }
 
 h1,

@@ -170,7 +170,7 @@ export default function HomePage() {
 
         <div className="mt-6">
           <Link
-            href="/contact"
+            href="/about"
             className="inline-block rounded-md bg-[var(--brand-gold)] px-8 py-4 text-base font-semibold tracking-wide text-black transition hover:bg-[var(--brand-gold)]/90"
           >
             Meet the Team

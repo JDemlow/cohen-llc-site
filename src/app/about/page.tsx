@@ -205,13 +205,6 @@ export default function AboutPage() {
           to provide clients with clear guidance and unwavering advocacy
           throughout every stage of their matter.
         </p>
-
-        <p className="mt-4 max-w-3xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
-          When we receive input from the client, this section will reflect the
-          firm&apos;s real origins, motivations, and long-term mission—framing
-          the identity of the practice in a way that supports trust and
-          credibility.
-        </p>
       </section>
     </main>
   );

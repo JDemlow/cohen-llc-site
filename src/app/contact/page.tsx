@@ -45,9 +45,8 @@ export default function ContactPage() {
           </h2>
 
           <p className="mt-3 text-sm text-gray-200/80 leading-relaxed">
-            Use this form to send a message to the firm. We&apos;ll tailor the
-            final instructions and intake preferences once we receive input from
-            the client.
+            Use this form to send a message to the firm regarding your legal
+            matter.
           </p>
 
           {/* form */}

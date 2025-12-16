@@ -47,6 +47,14 @@ export default function RootLayout({
               <Link href="/contact">Contact</Link>
             </nav>
 
+            <p className="mt-4 max-w-4xl text-xs text-gray-400 leading-relaxed">
+              The information on this website is provided for general
+              informational purposes only and does not constitute legal advice.
+              Viewing this site or contacting Cohen, LLC through this website
+              does not create an attorney–client relationship. Prior results do
+              not guarantee a similar outcome.
+            </p>
+
             <p className="mt-4 text-[11px] text-gray-400">
               © {new Date().getFullYear()} Cohen, LLC. All rights reserved.
             </p>
