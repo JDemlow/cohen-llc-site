@@ -191,9 +191,9 @@ export default function PracticeAreasPage() {
           <div className="mt-6">
             <Link
               href="/contact"
-              className="inline-block rounded-md bg-[var(--brand-gold)] px-10 py-4 
-                 text-sm font-semibold tracking-wide text-black transition 
-                 hover:bg-[var(--brand-gold)]/90"
+              className="inline-block rounded-md bg-[var(--brand-gold)] px-8 py-4 
+    text-base font-semibold tracking-wide text-black transition 
+    hover:bg-[var(--brand-gold)]/90"
             >
               Schedule a Consultation
             </Link>

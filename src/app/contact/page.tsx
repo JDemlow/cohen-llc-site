@@ -162,9 +162,9 @@ export default function ContactPage() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="mt-4 inline-block rounded-md bg-[var(--brand-gold)] px-8 py-3 
-      text-sm font-semibold tracking-wide text-black transition 
-      hover:bg-[var(--brand-gold)]/90"
+              className="mt-4 inline-block rounded-md bg-[var(--brand-gold)] px-8 py-4 
+    text-base font-semibold tracking-wide text-black transition 
+    hover:bg-[var(--brand-gold)]/90"
             >
               Submit
             </button>

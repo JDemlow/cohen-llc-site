@@ -60,11 +60,10 @@ export default function AboutPage() {
           </p>
 
           <p className="mt-3 text-sm text-gray-200/90 leading-relaxed">
-            This biography will highlight the attorney&apos;s background, areas
-            of practice, and experience in commercial litigation, franchise
-            matters, bankruptcy, and related business disputes. Final copy will
-            reflect each attorney&apos;s professional history and
-            accomplishments.
+            This section describes the attorney&apos;s background, areas of
+            practice, and experience handling commercial litigation, franchise
+            matters, bankruptcy, and related business disputes. Additional
+            details will be provided as firm biographies are finalized.
           </p>
 
           <p className="mt-4 max-w-2xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
@@ -103,11 +102,10 @@ export default function AboutPage() {
           </p>
 
           <p className="mt-3 text-sm text-gray-200/90 leading-relaxed">
-            This biography will highlight the attorney&apos;s background, areas
-            of practice, and experience in commercial litigation, franchise
-            matters, bankruptcy, and related business disputes. Final copy will
-            reflect each attorney&apos;s professional history and
-            accomplishments.
+            This section describes the attorney&apos;s background, areas of
+            practice, and experience handling commercial litigation, franchise
+            matters, bankruptcy, and related business disputes. Additional
+            details will be provided as firm biographies are finalized.
           </p>
 
           <p className="mt-4 max-w-2xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
@@ -145,11 +143,10 @@ export default function AboutPage() {
           </p>
 
           <p className="mt-3 text-sm text-gray-200/90 leading-relaxed">
-            This biography will highlight the attorney&apos;s background, areas
-            of practice, and experience in commercial litigation, franchise
-            matters, bankruptcy, and related business disputes. Final copy will
-            reflect each attorney&apos;s professional history and
-            accomplishments.
+            This section describes the attorney&apos;s background, areas of
+            practice, and experience handling commercial litigation, franchise
+            matters, bankruptcy, and related business disputes. Additional
+            details will be provided as firm biographies are finalized.
           </p>
 
           <p className="mt-4 max-w-2xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
