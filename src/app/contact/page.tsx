@@ -237,6 +237,7 @@ export default function ContactPage() {
 
         <div className="mt-6 overflow-hidden rounded-lg border border-white/10 bg-white/5">
           <iframe
+            title="Map showing Cohen, LLC Denver office location"
             src="https://www.google.com/maps?q=1600+Broadway+Suite+1660+Denver+CO+80202&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

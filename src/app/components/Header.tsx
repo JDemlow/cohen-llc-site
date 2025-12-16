@@ -2,9 +2,12 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const pathname = usePathname();
 
   return (
     <header className="py-4 border-b border-white/10">
@@ -53,16 +56,16 @@ export default function Header() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="sm:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-100 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[var(--brand-gold)] focus:ring-offset-2 focus:ring-offset-[var(--brand-charcoal)]"
+          className="sm:hidden inline-flex items-center justify-center rounded-md p-3 text-gray-100 hover:bg-white/10 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--brand-navy)]"
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((open) => !open)}
         >
           <span className="sr-only">Toggle navigation</span>
           <span className="flex flex-col gap-1.5">
-            <span className="block h-[2px] w-5 bg-current" />
-            <span className="block h-[2px] w-5 bg-current" />
-            <span className="block h-[2px] w-5 bg-current" />
+            <span className="block h-[2px] w-6 bg-current" />
+            <span className="block h-[2px] w-6 bg-current" />
+            <span className="block h-[2px] w-6 bg-current" />
           </span>
         </button>
       </nav>
