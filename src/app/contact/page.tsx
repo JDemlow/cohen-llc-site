@@ -85,7 +85,7 @@ export default function ContactPage() {
                 autoComplete="name"
                 required
                 className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-        border border-white/10 focus:border-[var(--brand-gold)] 
+        border border-white/20 focus:border-[var(--brand-gold)] 
         focus:outline-none"
               />
             </div>
@@ -105,7 +105,7 @@ export default function ContactPage() {
                 autoComplete="email"
                 required
                 className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-        border border-white/10 focus:border-[var(--brand-gold)] 
+        border border-white/20 focus:border-[var(--brand-gold)] 
         focus:outline-none"
               />
             </div>
@@ -124,7 +124,7 @@ export default function ContactPage() {
                 rows={5}
                 required
                 className="h-32 w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-        border border-white/10 focus:border-[var(--brand-gold)] 
+        border border-white/20 focus:border-[var(--brand-gold)] 
         focus:outline-none"
               />
             </div>
@@ -171,7 +171,7 @@ export default function ContactPage() {
           </form>
 
           {/* Contact Page Disclaimer */}
-          <div className="mt-10 rounded-lg bg-white/5 border border-white/10 px-6 py-4">
+          <div className="mt-10 rounded-lg bg-white/5 border border-white/20 px-6 py-4">
             <p className="text-xs text-gray-300 leading-relaxed">
               Information submitted through this form is for general inquiry
               purposes only and does not create an attorney&ndash;client
@@ -235,7 +235,7 @@ export default function ContactPage() {
           building&apos;s location and surrounding area.
         </p>
 
-        <div className="mt-6 overflow-hidden rounded-lg border border-white/10 bg-white/5">
+        <div className="mt-6 overflow-hidden rounded-lg border border-white/20 bg-white/5">
           <iframe
             title="Map showing Cohen, LLC Denver office location"
             src="https://www.google.com/maps?q=1600+Broadway+Suite+1660+Denver+CO+80202&output=embed"
