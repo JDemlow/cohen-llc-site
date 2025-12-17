@@ -1,10 +1,27 @@
 // app/page.tsx
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Cohen Trial – The Commercial Litigation Attorneys of Denver",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://choen-llc.netlify.app"),
+  title: "Cohen, LLC | Trial & Business Litigation",
   description:
-    "Cohen, LLC is a boutique Denver law firm representing clients in business, franchise, bankruptcy, and complex commercial matters. Our trial attorneys have handled hundreds of cases in state and federal courts across the country.",
+    "Cohen, LLC is a boutique Denver law firm focused on commercial litigation, franchise disputes, and complex bankruptcy matters.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/",
+    siteName: "Cohen, LLC",
+    title: "Cohen, LLC | Trial & Business Litigation",
+    description:
+      "Cohen, LLC is a boutique Denver law firm focused on commercial litigation, franchise disputes, and complex bankruptcy matters.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Cohen, LLC | Trial & Business Litigation",
+    description:
+      "Cohen, LLC is a boutique Denver law firm focused on commercial litigation, franchise disputes, and complex bankruptcy matters.",
+  },
 };
 
 export default function HomePage() {
