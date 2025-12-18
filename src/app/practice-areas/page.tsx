@@ -2,6 +2,7 @@
 
 import PrimaryButton from "../components/PrimaryButton";
 import SectionHeader from "../components/SectionHeader";
+import Card from "../components/Card";
 
 export const metadata = {
   title: "Practice Areas | Cohen, LLC",
@@ -26,11 +27,7 @@ export default function PracticeAreasPage() {
         }
       />
       <div className="my-16 h-px w-full bg-white/10"></div>
-      <div
-        className="mt-12 rounded-lg bg-white/5 p-8 border border-white/10 
-             shadow-lg shadow-black/5 transition 
-             hover:-translate-y-0.5 hover:border-white/20 hover:shadow-black/10"
-      >
+      <Card className="mt-12">
         <h2
           className="text-xl font-semibold"
           style={{ fontFamily: "var(--playfair)" }}
@@ -55,13 +52,9 @@ export default function PracticeAreasPage() {
           <li>Shareholder and partnership conflicts</li>
           <li>Municipal finance litigation</li>
         </ul>
-      </div>
+      </Card>
       <div className="my-16 h-px w-full bg-white/10"></div>
-      <div
-        className="mt-12 rounded-lg bg-white/5 p-8 border border-white/10 
-             shadow-lg shadow-black/5 transition 
-             hover:-translate-y-0.5 hover:border-white/20 hover:shadow-black/10"
-      >
+      <Card className="mt-12">
         <h2
           className="text-xl font-semibold"
           style={{ fontFamily: "var(--playfair)" }}
@@ -84,13 +77,9 @@ export default function PracticeAreasPage() {
           <li>Supply chain and vendor-related matters</li>
           <li>Representation in multi-party franchise actions</li>
         </ul>
-      </div>
+      </Card>
       <div className="my-16 h-px w-full bg-white/10"></div>
-      <div
-        className="mt-12 rounded-lg bg-white/5 p-8 border border-white/10 
-             shadow-lg shadow-black/5 transition 
-             hover:-translate-y-0.5 hover:border-white/20 hover:shadow-black/10"
-      >
+      <Card className="mt-12">
         <h2
           className="text-xl font-semibold"
           style={{ fontFamily: "var(--playfair)" }}
@@ -114,13 +103,9 @@ export default function PracticeAreasPage() {
           <li>Business insolvency strategy and negotiations</li>
           <li>Disputes arising from financial distress</li>
         </ul>
-      </div>
+      </Card>
       <div className="mt-12 h-px w-full bg-white/10"></div>
-      <div
-        className="mt-12 rounded-lg bg-white/5 p-8 border border-white/10 
-             shadow-lg shadow-black/5 transition 
-             hover:-translate-y-0.5 hover:border-white/20 hover:shadow-black/10"
-      >
+      <Card className="mt-12">
         <h2
           className="text-xl font-semibold"
           style={{ fontFamily: "var(--playfair)" }}
@@ -144,13 +129,9 @@ export default function PracticeAreasPage() {
           <li>Contractual and operational business counseling</li>
           <li>Business sales and divestitures</li>
         </ul>
-      </div>
+      </Card>
       <div className="my-16 h-px w-full bg-white/10"></div>
-      <div
-        className="mt-12 rounded-lg bg-white/5 p-8 border border-white/10 
-             shadow-lg shadow-black/5 transition 
-             hover:-translate-y-0.5 hover:border-white/20 hover:shadow-black/10"
-      >
+      <Card className="mt-12">
         <h2
           className="text-xl font-semibold"
           style={{ fontFamily: "var(--playfair)" }}
@@ -174,7 +155,7 @@ export default function PracticeAreasPage() {
           <li>Consumer protection claims</li>
           <li>Professional liability matters</li>
         </ul>
-      </div>
+      </Card>
       {/* Bottom CTA */}
       <div className="mt-24 pt-16 border-t border-white/10 text-center">
         <p className="text-sm text-gray-200/80 tracking-wide">
