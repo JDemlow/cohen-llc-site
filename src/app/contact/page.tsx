@@ -1,5 +1,6 @@
 // app/contact/page.tsx
 import PrimaryButton from "../components/PrimaryButton";
+import SectionHeader from "../components/SectionHeader";
 
 export const metadata = {
   title: "Contact Us | Cohen, LLC",
@@ -11,29 +12,21 @@ export default function ContactPage() {
   return (
     <main className="py-16">
       {/* Intro Section */}
-      <section className="rounded-lg bg-[var(--brand-navy)]/10 px-6 py-16">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--brand-gold)]">
-          Contact
-        </p>
-
-        <h1
-          className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl"
-          style={{ fontFamily: "var(--playfair)" }}
-        >
-          Schedule a Consultation
-        </h1>
-
-        <p className="mt-6 max-w-3xl text-sm sm:text-base text-gray-200/90 leading-relaxed">
-          Use the form below to contact Cohen, LLC regarding business,
-          franchise, bankruptcy, or commercial litigation matters. A member of
-          our team will review your message and follow up to discuss your legal
-          needs and next steps.
-        </p>
-      </section>
-
+      <SectionHeader
+        as="h1"
+        eyebrow="Contact"
+        title="Schedule a Consultation"
+        description={
+          <>
+            Use the form below to contact Cohen, LLC regarding business,
+            franchise, bankruptcy, or commercial litigation matters. A member of
+            our team will review your message and follow up to discuss next
+            steps.
+          </>
+        }
+      />
       {/* Divider */}
       <div className="my-16 h-px w-full bg-white/10"></div>
-
       {/* Form + Contact Info Section */}
       <section className="mt-12 rounded-lg bg-[var(--brand-navy)]/10 px-6 py-12 grid gap-12 sm:grid-cols-2">
         {/* Contact Form Placeholder */}
@@ -210,10 +203,8 @@ export default function ContactPage() {
           </ul>
         </div>
       </section>
-
       {/* Divider */}
       <div className="my-16 h-px w-full bg-white/10"></div>
-
       {/* Office Location */}
       <section className="mt-12">
         <h2
