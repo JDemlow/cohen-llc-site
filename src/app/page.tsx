@@ -1,6 +1,7 @@
 // app/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
+import PrimaryButton from "./components/PrimaryButton";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://choen-llc.netlify.app"),
@@ -54,12 +55,9 @@ export default function HomePage() {
           </p>
 
           <div className="mt-8 flex justify-center sm:justify-start">
-            <Link
-              href="/contact"
-              className="inline-block rounded-md bg-[var(--brand-gold)] px-8 py-4 text-base font-semibold tracking-wide text-black transition hover:bg-[var(--brand-gold)]/90"
-            >
+            <PrimaryButton href="/contact">
               Schedule a Consultation
-            </Link>
+            </PrimaryButton>
           </div>
         </div>
       </section>

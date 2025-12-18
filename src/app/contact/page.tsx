@@ -1,4 +1,5 @@
 // app/contact/page.tsx
+import PrimaryButton from "../components/PrimaryButton";
 
 export const metadata = {
   title: "Contact Us | Cohen, LLC",
@@ -160,14 +161,7 @@ export default function ContactPage() {
             </div>
 
             {/* Submit Button */}
-            <button
-              type="submit"
-              className="mt-4 inline-block rounded-md bg-[var(--brand-gold)] px-8 py-4 
-    text-base font-semibold tracking-wide text-black transition 
-    hover:bg-[var(--brand-gold)]/90"
-            >
-              Submit
-            </button>
+            <PrimaryButton type="submit">Submit</PrimaryButton>
           </form>
 
           {/* Contact Page Disclaimer */}

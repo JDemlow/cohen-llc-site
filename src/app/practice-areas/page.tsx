@@ -1,5 +1,6 @@
 // app/practice-areas/page.tsx
-import Link from "next/link";
+
+import PrimaryButton from "../components/PrimaryButton";
 
 export const metadata = {
   title: "Practice Areas | Cohen, LLC",
@@ -189,14 +190,9 @@ export default function PracticeAreasPage() {
           </p>
 
           <div className="mt-6">
-            <Link
-              href="/contact"
-              className="inline-block rounded-md bg-[var(--brand-gold)] px-8 py-4 
-    text-base font-semibold tracking-wide text-black transition 
-    hover:bg-[var(--brand-gold)]/90"
-            >
+            <PrimaryButton href="/contact">
               Schedule a Consultation
-            </Link>
+            </PrimaryButton>
           </div>
         </div>
       </section>
