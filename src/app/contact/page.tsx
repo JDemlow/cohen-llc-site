@@ -52,6 +52,8 @@ export default function ContactPage() {
             data-netlify-honeypot="bot-field"
             className="mt-6 space-y-4"
           >
+            <input type="hidden" name="form-name" value="contact" />
+
             {/* Netlify honeypot field */}
             <p className="hidden" aria-hidden="true">
               <label htmlFor="bot-field">Do not fill this field</label>
