@@ -201,7 +201,7 @@ export default function ContactPage() {
             <li>
               <span className="font-semibold text-white">Address:</span>
               <br />
-              1600 Broadway
+              1600 N Broadway
               <br />
               Suite 1660
               <br />
@@ -230,7 +230,7 @@ export default function ContactPage() {
         </h2>
 
         <p className="mt-3 text-sm text-gray-200/80 leading-relaxed max-w-xl">
-          The Denver office is located at 1600 Broadway, Suite 1660, in the
+          The Denver office is located at 1600 N Broadway, Suite 1660, in the
           downtown corridor. The embedded map below can be used to view the
           building&apos;s location and surrounding area.
         </p>
@@ -238,7 +238,7 @@ export default function ContactPage() {
         <div className="mt-6 overflow-hidden rounded-lg border border-white/20 bg-white/5">
           <iframe
             title="Map showing Cohen, LLC Denver office location"
-            src="https://www.google.com/maps?q=1600+Broadway+Suite+1660+Denver+CO+80202&output=embed"
+            src="https://www.google.com/maps?q=1600+N+Broadway+Suite+1660+Denver+CO+80202&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className="h-64 w-full border-0 sm:h-80"
