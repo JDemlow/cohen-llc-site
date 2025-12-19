@@ -1,12 +1,9 @@
 // app/contact/page.tsx
+
+"use client";
+
 import PrimaryButton from "../components/PrimaryButton";
 import SectionHeader from "../components/SectionHeader";
-
-export const metadata = {
-  title: "Contact Us | Cohen, LLC",
-  description:
-    "Get in touch with Cohen, LLC regarding business, franchise, bankruptcy, and commercial litigation matters. Use our secure contact form to schedule a consultation.",
-};
 
 export default function ContactPage() {
   return (
@@ -44,7 +41,6 @@ export default function ContactPage() {
           </p>
 
           {/* form */}
-          {/* form */}
           <form
             name="contact"
             method="POST"
@@ -53,18 +49,14 @@ export default function ContactPage() {
             data-netlify-honeypot="bot-field"
             className="mt-6 space-y-4"
             onSubmit={(e) => {
-              // Let the form submit naturally to Netlify
+              e.preventDefault();
               const form = e.currentTarget;
-
-              // Encode form data
               const formData = new FormData(form);
               const data = new URLSearchParams();
 
               for (const [key, value] of formData.entries()) {
                 data.append(key, value.toString());
               }
-
-              e.preventDefault();
 
               fetch("/", {
                 method: "POST",
