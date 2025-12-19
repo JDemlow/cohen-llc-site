@@ -2,10 +2,32 @@
 
 "use client";
 
+import { useTransition } from "react";
+import { useRouter } from "next/navigation";
 import PrimaryButton from "../components/PrimaryButton";
 import SectionHeader from "../components/SectionHeader";
+import { submitContactForm } from "./actions";
 
 export default function ContactPage() {
+  const router = useRouter();
+  const [isPending, startTransition] = useTransition();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    startTransition(async () => {
+      try {
+        await submitContactForm(formData);
+        router.push("/contact-success");
+      } catch (error) {
+        alert("Error submitting form. Please try again.");
+        console.error(error);
+      }
+    });
+  };
   return (
     <main className="py-16">
       {/* Intro Section */}
@@ -43,43 +65,8 @@ export default function ContactPage() {
           {/* form */}
           <form
             name="contact"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
             className="mt-6 space-y-4"
-            onSubmit={async (e) => {
-              e.preventDefault();
-
-              const form = e.currentTarget;
-              const formData = new FormData(form);
-
-              // Encode the form data
-              const body = new URLSearchParams();
-              for (const [key, value] of formData.entries()) {
-                body.append(key, value as string);
-              }
-
-              try {
-                const response = await fetch("/", {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
-                  },
-                  body: body.toString(),
-                });
-
-                if (response.ok) {
-                  window.location.href = "/contact-success";
-                } else {
-                  throw new Error("Form submission failed");
-                }
-              } catch (error) {
-                console.error("Error:", error);
-                alert(
-                  "There was an error submitting the form. Please try again."
-                );
-              }
-            }}
           >
             <input type="hidden" name="form-name" value="contact" />
 
@@ -185,7 +172,9 @@ export default function ContactPage() {
             </div>
 
             {/* Submit Button */}
-            <PrimaryButton type="submit">Submit</PrimaryButton>
+            <PrimaryButton type="submit" disabled={isPending}>
+              {isPending ? "Submitting..." : "Submit"}
+            </PrimaryButton>
           </form>
 
           {/* Contact Page Disclaimer */}
