@@ -232,6 +232,21 @@ export default function ContactPage() {
             allowFullScreen
           />
         </div>
+        {/* Netlify Forms: detection-only hidden form */}
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          hidden
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <input name="bot-field" />
+          <input name="name" />
+          <input name="email" />
+          <textarea name="message" />
+          <input name="acknowledgment" />
+        </form>
       </section>
     </main>
   );
