@@ -48,31 +48,6 @@ export default function ContactPage() {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             className="mt-6 space-y-4"
-            onSubmit={(e) => {
-              e.preventDefault();
-              const form = e.currentTarget;
-              const formData = new FormData(form);
-              const data = new URLSearchParams();
-
-              for (const [key, value] of formData.entries()) {
-                data.append(key, value.toString());
-              }
-
-              fetch("/", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/x-www-form-urlencoded",
-                },
-                body: data.toString(),
-              })
-                .then(() => {
-                  window.location.href = "/contact-success";
-                })
-                .catch((error) => {
-                  alert("Error submitting form. Please try again.");
-                  console.error(error);
-                });
-            }}
           >
             <input type="hidden" name="form-name" value="contact" />
 
