@@ -44,6 +44,7 @@ export default function ContactPage() {
           </p>
 
           {/* form */}
+          {/* form */}
           <form
             name="contact"
             method="POST"
@@ -51,6 +52,35 @@ export default function ContactPage() {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             className="mt-6 space-y-4"
+            onSubmit={(e) => {
+              // Let the form submit naturally to Netlify
+              const form = e.currentTarget;
+
+              // Encode form data
+              const formData = new FormData(form);
+              const data = new URLSearchParams();
+
+              for (const [key, value] of formData.entries()) {
+                data.append(key, value.toString());
+              }
+
+              e.preventDefault();
+
+              fetch("/", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: data.toString(),
+              })
+                .then(() => {
+                  window.location.href = "/contact-success";
+                })
+                .catch((error) => {
+                  alert("Error submitting form. Please try again.");
+                  console.error(error);
+                });
+            }}
           >
             <input type="hidden" name="form-name" value="contact" />
 
