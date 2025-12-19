@@ -11,21 +11,6 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <main className="py-16">
-      {/* Hidden form for Netlify detection - MUST be at top level */}
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        hidden
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <input name="bot-field" />
-        <input name="name" />
-        <input name="email" />
-        <textarea name="message" />
-        <input name="acknowledgment" type="checkbox" />
-      </form>
       {/* Intro Section */}
       <SectionHeader
         as="h1"
