@@ -44,10 +44,42 @@ export default function ContactPage() {
           <form
             name="contact"
             method="POST"
-            action="/contact-success"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             className="mt-6 space-y-4"
+            onSubmit={async (e) => {
+              e.preventDefault();
+
+              const form = e.currentTarget;
+              const formData = new FormData(form);
+
+              // Encode the form data
+              const body = new URLSearchParams();
+              for (const [key, value] of formData.entries()) {
+                body.append(key, value as string);
+              }
+
+              try {
+                const response = await fetch("/", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                  },
+                  body: body.toString(),
+                });
+
+                if (response.ok) {
+                  window.location.href = "/contact-success";
+                } else {
+                  throw new Error("Form submission failed");
+                }
+              } catch (error) {
+                console.error("Error:", error);
+                alert(
+                  "There was an error submitting the form. Please try again."
+                );
+              }
+            }}
           >
             <input type="hidden" name="form-name" value="contact" />
 
