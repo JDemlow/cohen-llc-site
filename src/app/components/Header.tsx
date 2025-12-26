@@ -40,7 +40,7 @@ export default function Header() {
               href="/about"
               className="opacity-80 hover:opacity-100 transition"
             >
-              About
+              Who We Are
             </Link>
           </li>
           <li>

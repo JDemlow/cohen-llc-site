@@ -53,7 +53,7 @@ export default function RootLayout({
             <nav className="mt-3 flex justify-center gap-6 text-xs sm:text-sm">
               <Link href="/">Home</Link>
               <Link href="/practice-areas">Practice Areas</Link>
-              <Link href="/about">About</Link>
+              <Link href="/about">Who We Are</Link>
               <Link href="/contact">Contact</Link>
             </nav>
 
