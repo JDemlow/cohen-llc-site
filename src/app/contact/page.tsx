@@ -1,13 +1,8 @@
 // app/contact/page.tsx
 
-import PrimaryButton from "../components/PrimaryButton";
-import SectionHeader from "../components/SectionHeader";
+"use client";
 
-export const metadata = {
-  title: "Contact Us | Cohen, LLC",
-  description:
-    "Get in touch with Cohen, LLC regarding business, franchise, bankruptcy, and commercial litigation matters. Use our secure contact form to schedule a consultation.",
-};
+import SectionHeader from "../components/SectionHeader";
 
 export default function ContactPage() {
   return (
@@ -44,19 +39,50 @@ export default function ContactPage() {
             matter.
           </p>
 
-          {/* Formspree Form */}
+          {/* Formspree Form with JavaScript Redirect */}
           <form
             action="https://formspree.io/f/mdaokyld"
             method="POST"
             className="mt-6 space-y-4"
-          >
-            {/* Hidden field for custom redirect */}
-            <input
-              type="hidden"
-              name="_next"
-              value="https://cohen-llc.netlify.app/contact-success"
-            />
+            onSubmit={(e) => {
+              e.preventDefault();
+              const form = e.currentTarget;
+              const data = new FormData(form);
 
+              fetch("https://formspree.io/f/mdaokyld", {
+                method: "POST",
+                body: data,
+                headers: {
+                  Accept: "application/json",
+                },
+              })
+                .then((response) => {
+                  if (response.ok) {
+                    window.location.href = "/contact-success";
+                  } else {
+                    response.json().then((data) => {
+                      if (data.errors) {
+                        alert(
+                          "There was a problem: " +
+                            data.errors
+                              .map((e: { message: string }) => e.message)
+                              .join(", ")
+                        );
+                      } else {
+                        alert(
+                          "There was a problem submitting your form. Please try again."
+                        );
+                      }
+                    });
+                  }
+                })
+                .catch(() => {
+                  alert(
+                    "There was a problem submitting your form. Please try again."
+                  );
+                });
+            }}
+          >
             {/* NAME */}
             <div>
               <label
