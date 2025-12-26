@@ -101,7 +101,7 @@ export default function Header() {
               className="block rounded-md px-3 py-2 bg-white/5 border border-white/10 opacity-90 hover:opacity-100 transition"
               onClick={() => setIsOpen(false)}
             >
-              About
+              Who We Are
             </Link>
           </li>
           <li>
