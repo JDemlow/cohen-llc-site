@@ -1,33 +1,15 @@
 // app/contact/page.tsx
 
-"use client";
-
-import { useTransition } from "react";
-import { useRouter } from "next/navigation";
 import PrimaryButton from "../components/PrimaryButton";
 import SectionHeader from "../components/SectionHeader";
-import { submitContactForm } from "./actions";
+
+export const metadata = {
+  title: "Contact Us | Cohen, LLC",
+  description:
+    "Get in touch with Cohen, LLC regarding business, franchise, bankruptcy, and commercial litigation matters. Use our secure contact form to schedule a consultation.",
+};
 
 export default function ContactPage() {
-  const router = useRouter();
-  const [isPending, startTransition] = useTransition();
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    startTransition(async () => {
-      try {
-        await submitContactForm(formData);
-        router.push("/contact-success");
-      } catch (error) {
-        alert("Error submitting form. Please try again.");
-        console.error(error);
-      }
-    });
-  };
   return (
     <main className="py-16">
       {/* Intro Section */}
@@ -48,7 +30,7 @@ export default function ContactPage() {
       <div className="my-16 h-px w-full bg-white/10"></div>
       {/* Form + Contact Info Section */}
       <section className="mt-12 rounded-lg bg-[var(--brand-navy)]/10 px-6 py-12 grid gap-12 sm:grid-cols-2">
-        {/* Contact Form Placeholder */}
+        {/* Contact Form */}
         <div>
           <h2
             className="text-xl font-semibold sm:text-2xl"
@@ -62,25 +44,18 @@ export default function ContactPage() {
             matter.
           </p>
 
-          {/* form */}
+          {/* Formspree Form */}
           <form
-            name="contact"
-            onSubmit={handleSubmit}
+            action="https://formspree.io/f/mdaokyld"
+            method="POST"
             className="mt-6 space-y-4"
           >
-            <input type="hidden" name="form-name" value="contact" />
-
-            {/* Netlify honeypot field */}
-            <p className="hidden" aria-hidden="true">
-              <label htmlFor="bot-field">Do not fill this field</label>
-              <input
-                id="bot-field"
-                name="bot-field"
-                type="text"
-                autoComplete="off"
-                tabIndex={-1}
-              />
-            </p>
+            {/* Hidden field for custom redirect */}
+            <input
+              type="hidden"
+              name="_next"
+              value="https://cohen-llc.netlify.app/contact-success"
+            />
 
             {/* NAME */}
             <div>
@@ -97,8 +72,8 @@ export default function ContactPage() {
                 autoComplete="name"
                 required
                 className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-        border border-white/20 focus:border-[var(--brand-gold)] 
-        focus:outline-none"
+                  border border-white/20 focus:border-[var(--brand-gold)] 
+                  focus:outline-none"
               />
             </div>
 
@@ -117,8 +92,8 @@ export default function ContactPage() {
                 autoComplete="email"
                 required
                 className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-        border border-white/20 focus:border-[var(--brand-gold)] 
-        focus:outline-none"
+                  border border-white/20 focus:border-[var(--brand-gold)] 
+                  focus:outline-none"
               />
             </div>
 
@@ -136,8 +111,8 @@ export default function ContactPage() {
                 rows={5}
                 required
                 className="h-32 w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-        border border-white/20 focus:border-[var(--brand-gold)] 
-        focus:outline-none"
+                  border border-white/20 focus:border-[var(--brand-gold)] 
+                  focus:outline-none"
               />
             </div>
 
@@ -155,9 +130,10 @@ export default function ContactPage() {
                   id="acknowledgment"
                   name="acknowledgment"
                   type="checkbox"
+                  value="yes"
                   required
                   className="mt-1 h-4 w-4 rounded-sm border border-white/20 bg-white/5 
-          text-[var(--brand-gold)] focus:ring-[var(--brand-gold)]"
+                    text-[var(--brand-gold)] focus:ring-[var(--brand-gold)]"
                   aria-describedby="acknowledgment-description"
                 />
 
@@ -172,9 +148,12 @@ export default function ContactPage() {
             </div>
 
             {/* Submit Button */}
-            <PrimaryButton type="submit" disabled={isPending}>
-              {isPending ? "Submitting..." : "Submit"}
-            </PrimaryButton>
+            <button
+              type="submit"
+              className="inline-block rounded-md bg-[var(--brand-gold)] px-8 py-4 text-base font-semibold tracking-wide cursor-pointer text-black transition hover:bg-[var(--brand-gold)]/90"
+            >
+              Submit
+            </button>
           </form>
 
           {/* Contact Page Disclaimer */}
@@ -189,7 +168,6 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Contact Information */}
         {/* Contact Details */}
         <div>
           <h2
