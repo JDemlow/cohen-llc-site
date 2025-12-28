@@ -13,7 +13,7 @@ export default function NotFound() {
       <div className="text-center max-w-2xl mx-auto px-4">
         {/* Error Code */}
         <div
-          className="text-8xl sm:text-9xl font-bold text-[var(--brand-gold)]/20"
+          className="text-8xl sm:text-9xl font-bold text-(--brand-gold)/20"
           style={{ fontFamily: "var(--playfair)" }}
           aria-hidden="true"
         >
@@ -40,7 +40,7 @@ export default function NotFound() {
 
           <Link
             href="/contact"
-            className="text-sm text-[var(--brand-gold)] hover:text-[var(--brand-gold)]/80 transition underline underline-offset-4"
+            className="text-sm text-(--brand-gold) hover:text-(--brand-gold)/80 transition underline underline-offset-4"
           >
             Contact Us
           </Link>

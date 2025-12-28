@@ -4,6 +4,7 @@ import "./globals.css";
 import { Inter, Playfair_Display } from "next/font/google";
 import Header from "./components/Header";
 import Link from "next/link";
+import FocusManager from "./components/FocusManager";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -38,9 +39,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <FocusManager />
+
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
+
         <div className="mx-auto max-w-6xl px-4">
           <Header />
-          {children}
+          <main id="main-content" tabIndex={-1}>
+            {children}
+          </main>
 
           <footer className="mt-24 border-t border-white/10 py-10 text-center text-sm text-gray-300">
             <div
