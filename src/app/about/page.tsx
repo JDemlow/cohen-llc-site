@@ -261,7 +261,7 @@ export default function AboutPage() {
           {/* Photo */}
           <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto md:mx-0 overflow-hidden rounded-lg">
             <Image
-              src="/images/katelyn-bowles.png"
+              src="/images/katelyn-bowles.jpg"
               alt="Katelyn Bowles, Practice Manager at Cohen, LLC"
               fill
               className="object-cover"
