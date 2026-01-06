@@ -2,9 +2,55 @@
 
 "use client";
 
+import { useState } from "react";
 import SectionHeader from "../components/SectionHeader";
 
 export default function ContactPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError(null);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mdaokyld", {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        window.location.href = "/contact-success";
+      } else {
+        const errorData = await response.json();
+        if (errorData.errors) {
+          setError(
+            errorData.errors
+              .map((e: { message: string }) => e.message)
+              .join(", ")
+          );
+        } else {
+          setError(
+            "There was a problem submitting your form. Please try again."
+          );
+        }
+        setIsSubmitting(false);
+      }
+    } catch (err) {
+      setError(
+        "There was a problem submitting your form. Please check your connection and try again."
+      );
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <main className="py-16">
       {/* Intro Section */}
@@ -39,50 +85,15 @@ export default function ContactPage() {
             matter.
           </p>
 
-          {/* Formspree Form with JavaScript Redirect */}
-          <form
-            action="https://formspree.io/f/mdaokyld"
-            method="POST"
-            className="mt-6 space-y-4"
-            onSubmit={(e) => {
-              e.preventDefault();
-              const form = e.currentTarget;
-              const data = new FormData(form);
+          {/* Error Message */}
+          {error && (
+            <div className="mt-6 rounded-lg bg-red-900/20 border border-red-500/50 px-4 py-3">
+              <p className="text-sm text-red-200">{error}</p>
+            </div>
+          )}
 
-              fetch("https://formspree.io/f/mdaokyld", {
-                method: "POST",
-                body: data,
-                headers: {
-                  Accept: "application/json",
-                },
-              })
-                .then((response) => {
-                  if (response.ok) {
-                    window.location.href = "/contact-success";
-                  } else {
-                    response.json().then((data) => {
-                      if (data.errors) {
-                        alert(
-                          "There was a problem: " +
-                            data.errors
-                              .map((e: { message: string }) => e.message)
-                              .join(", ")
-                        );
-                      } else {
-                        alert(
-                          "There was a problem submitting your form. Please try again."
-                        );
-                      }
-                    });
-                  }
-                })
-                .catch(() => {
-                  alert(
-                    "There was a problem submitting your form. Please try again."
-                  );
-                });
-            }}
-          >
+          {/* Form */}
+          <form onSubmit={handleSubmit} className="mt-6 space-y-4">
             {/* NAME */}
             <div>
               <label
@@ -97,9 +108,10 @@ export default function ContactPage() {
                 type="text"
                 autoComplete="name"
                 required
+                disabled={isSubmitting}
                 className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
                   border border-white/20 focus:border-[var(--brand-gold)] 
-                  focus:outline-none"
+                  focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -117,9 +129,10 @@ export default function ContactPage() {
                 type="email"
                 autoComplete="email"
                 required
+                disabled={isSubmitting}
                 className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
                   border border-white/20 focus:border-[var(--brand-gold)] 
-                  focus:outline-none"
+                  focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -136,9 +149,10 @@ export default function ContactPage() {
                 name="message"
                 rows={5}
                 required
+                disabled={isSubmitting}
                 className="h-32 w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
                   border border-white/20 focus:border-[var(--brand-gold)] 
-                  focus:outline-none"
+                  focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
               />
             </div>
 
@@ -158,8 +172,10 @@ export default function ContactPage() {
                   type="checkbox"
                   value="yes"
                   required
+                  disabled={isSubmitting}
                   className="mt-1 h-4 w-4 rounded-sm border border-white/20 bg-white/5 
-                    text-[var(--brand-gold)] focus:ring-[var(--brand-gold)]"
+                    text-[var(--brand-gold)] focus:ring-[var(--brand-gold)] 
+                    disabled:opacity-50 disabled:cursor-not-allowed"
                   aria-describedby="acknowledgment-description"
                 />
 
@@ -176,9 +192,37 @@ export default function ContactPage() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="inline-block rounded-md bg-[var(--brand-gold)] px-8 py-4 text-base font-semibold tracking-wide cursor-pointer text-black transition hover:bg-[var(--brand-gold)]/90"
+              disabled={isSubmitting}
+              className="inline-flex items-center justify-center gap-2 rounded-md bg-[var(--brand-gold)] px-8 py-4 text-base font-semibold tracking-wide text-black transition hover:bg-[var(--brand-gold)]/90 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Submit
+              {isSubmitting ? (
+                <>
+                  <svg
+                    className="animate-spin h-5 w-5 text-black"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    ></circle>
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    ></path>
+                  </svg>
+                  Sending...
+                </>
+              ) : (
+                "Submit"
+              )}
             </button>
           </form>
 
