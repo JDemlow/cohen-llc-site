@@ -284,19 +284,37 @@ export default function ContactPage() {
 
         <p className="mt-3 text-sm text-gray-200/80 leading-relaxed max-w-xl">
           The Denver office is located at 1600 N Broadway, Suite 1660, in the
-          downtown corridor. The embedded map below can be used to view the
-          building&apos;s location and surrounding area.
+          downtown corridor. View the location on Google Maps below.
         </p>
 
-        <div className="mt-6 overflow-hidden rounded-lg border border-white/20 bg-white/5">
-          <iframe
-            title="Map showing Cohen, LLC Denver office location"
-            src="https://www.google.com/maps?q=1600+N+Broadway+Suite+1660+Denver+CO+80202&output=embed"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="h-64 w-full border-0 sm:h-80"
-            allowFullScreen
-          />
+        {/* Map Container with Link Fallback */}
+        <div className="mt-6">
+          <a
+            href="https://www.google.com/maps/place/1600+N+Broadway+Suite+1660+Denver+CO+80202"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block overflow-hidden rounded-lg border border-white/20 bg-white/5 hover:border-white/30 transition"
+          >
+            <iframe
+              title="Map showing Cohen, LLC Denver office location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.0429892547205!2d-105.00270492346655!3d39.74313029647586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78c4bb0a5a8f%3A0x4e4e4e4e4e4e4e4e!2s1600%20N%20Broadway%2C%20Denver%2C%20CO%2080202!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-64 w-full border-0 sm:h-80 pointer-events-none"
+              allowFullScreen
+            />
+          </a>
+          <p className="mt-2 text-xs text-gray-400 text-center">
+            Click map to open in Google Maps •
+            <a
+              href="https://www.google.com/maps/dir//1600+N+Broadway+Suite+1660+Denver+CO+80202"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-1 text-[var(--brand-gold)] hover:text-[var(--brand-gold)]/80 underline"
+            >
+              Get Directions
+            </a>
+          </p>
         </div>
       </section>
     </main>
