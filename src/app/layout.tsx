@@ -4,7 +4,7 @@ import "./globals.css";
 import { Inter, Playfair_Display } from "next/font/google";
 import Header from "./components/Header";
 import Link from "next/link";
-import FocusManager from "./components/FocusManager";
+import Image from "next/image";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,8 +39,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <FocusManager />
-
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
@@ -52,11 +50,14 @@ export default function RootLayout({
           </main>
 
           <footer className="mt-24 border-t border-white/10 py-10 text-center text-sm text-gray-300">
-            <div
-              className="font-semibold"
-              style={{ fontFamily: playfair.style.fontFamily }}
-            >
-              Cohen, LLC
+            {/* Logo */}
+            <div className="flex justify-center mb-6">
+              <Image
+                src="/cohen-logo.svg"
+                alt="Cohen, LLC"
+                width={200}
+                height={40}
+              />
             </div>
 
             <nav className="mt-3 flex justify-center gap-6 text-xs sm:text-sm">

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -9,13 +10,16 @@ export default function Header() {
   return (
     <header className="py-4 border-b border-white/10">
       <nav className="flex items-center justify-between">
-        {/* Brand */}
-        <div
-          className="text-xl font-semibold"
-          style={{ fontFamily: "var(--playfair)" }}
-        >
-          <Link href="/">Cohen, LLC</Link>
-        </div>
+        {/* Brand Logo */}
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/cohen-logo-header.svg"
+            alt="Cohen, LLC"
+            width={160}
+            height={32}
+            priority
+          />
+        </Link>
 
         {/* Desktop nav */}
         <ul className="hidden sm:flex flex-wrap gap-4 text-xs sm:gap-6 sm:text-sm">
@@ -53,7 +57,7 @@ export default function Header() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="sm:hidden inline-flex items-center justify-center rounded-md p-3 text-gray-100 hover:bg-white/10 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-(--brand-gold) focus-visible:ring-offset-2 focus-visible:ring-offset-(--brand-navy)"
+          className="sm:hidden inline-flex items-center justify-center rounded-md p-3 text-gray-100 hover:bg-white/10 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--brand-navy)]"
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((open) => !open)}

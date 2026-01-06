@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 32" width="160" height="32">
+  <style>
+    .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 600;
+      fill: #ffffff;
+      letter-spacing: 0.05em;
+    }
+  </style>
+  <text x="80" y="23" text-anchor="middle" class="logo-text">COHEN, LLC</text>
+</svg>
