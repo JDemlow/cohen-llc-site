@@ -233,7 +233,7 @@ export default function AboutPage() {
               src="/images/tanner-sandor.jpg"
               alt="Tanner Sandor, Associate Attorney at Cohen, LLC"
               fill
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 768px) 100vw, 300px"
             />
           </div>
@@ -261,7 +261,7 @@ export default function AboutPage() {
           {/* Photo */}
           <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto md:mx-0 overflow-hidden rounded-lg">
             <Image
-              src="/images/katelyn-bowles.jpg"
+              src="/images/katelyn-bowles.png"
               alt="Katelyn Bowles, Practice Manager at Cohen, LLC"
               fill
               className="object-cover"
