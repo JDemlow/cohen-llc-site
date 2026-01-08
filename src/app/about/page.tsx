@@ -1,6 +1,7 @@
 // app/about/page.tsx
 import Image from "next/image";
 import SectionHeader from "../components/SectionHeader";
+import PrimaryButton from "../components/PrimaryButton";
 
 export const metadata = {
   title: "About Us | Cohen, LLC",
@@ -452,6 +453,14 @@ export default function AboutPage() {
             legal excellence. We are committed to clear communication, strategic
             thinking, and achieving the best possible outcomes for our clients.
           </p>
+        </div>
+
+        {/* Subtle CTA at end of content */}
+        <div className="mt-8 inline-block">
+          <p className="text-sm text-gray-400 mb-3">
+            Ready to work with our team?
+          </p>
+          <PrimaryButton href="/contact">Schedule a Consultation</PrimaryButton>
         </div>
       </section>
     </main>
