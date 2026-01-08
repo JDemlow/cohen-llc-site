@@ -8,7 +8,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="py-4 border-b border-white/10">
+    <header className="sticky top-0 z-50 bg-[var(--brand-charcoal)] py-4 border-b border-white/10">
       <nav className="flex items-center justify-between">
         {/* Brand Logo with Gold Underline */}
         <Link href="/" className="group inline-block">
