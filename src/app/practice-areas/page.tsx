@@ -48,7 +48,7 @@ export default function PracticeAreasPage() {
             state and federal courts.
           </p>
 
-          <ul className="mt-5 list-disc list-inside text-sm text-gray-200/80 space-y-1.5">
+          <ul className="mt-5 list-disc pl-5 marker:text-gray-400 text-sm text-gray-200/80 space-y-1.5">
             <li>Intellectual property disputes</li>
             <li>Class action and mass tort litigation</li>
             <li>Restructuring and debt recovery matters</li>
@@ -79,7 +79,7 @@ export default function PracticeAreasPage() {
             pre-litigation strategy through trial and appeals.
           </p>
 
-          <ul className="mt-5 list-disc list-inside text-sm text-gray-200/80 space-y-1.5">
+          <ul className="mt-5 list-disc pl-5 marker:text-gray-400 text-sm text-gray-200/80 space-y-1.5">
             <li>FDD disclosure and compliance disputes</li>
             <li>Franchisee–franchisor conflict resolution</li>
             <li>Supply chain and vendor-related matters</li>
@@ -110,7 +110,7 @@ export default function PracticeAreasPage() {
             all sizes.
           </p>
 
-          <ul className="mt-5 list-disc list-inside text-sm text-gray-200/80 space-y-1.5">
+          <ul className="mt-5 list-disc pl-5 marker:text-gray-400 text-sm text-gray-200/80 space-y-1.5">
             <li>Creditor and debtor representation</li>
             <li>Chapter 11 reorganizations and structured workouts</li>
             <li>Business insolvency strategy and negotiations</li>
@@ -140,7 +140,7 @@ export default function PracticeAreasPage() {
             operational support, and business divestitures.
           </p>
 
-          <ul className="mt-5 list-disc list-inside text-sm text-gray-200/80 space-y-1.5">
+          <ul className="mt-5 list-disc pl-5 marker:text-gray-400 text-sm text-gray-200/80 space-y-1.5">
             <li>Drafting and review of FDDs and franchise agreements</li>
             <li>Franchise structuring and regulatory guidance</li>
             <li>Mergers and acquisitions support</li>
@@ -172,7 +172,7 @@ export default function PracticeAreasPage() {
             trial.
           </p>
 
-          <ul className="mt-5 list-disc list-inside text-sm text-gray-200/80 space-y-1.5">
+          <ul className="mt-5 list-disc pl-5 marker:text-gray-400 text-sm text-gray-200/80 space-y-1.5">
             <li>Contract and business disputes</li>
             <li>Fraud and misrepresentation matters</li>
             <li>Products liability litigation</li>
