@@ -256,17 +256,29 @@ export default function ContactPage() {
             <li>
               <span className="font-semibold text-white">Address:</span>
               <br />
-              1600 N Broadway
-              <br />
-              Suite 1660
-              <br />
-              Denver, CO 80202
+              <a
+                href="https://www.google.com/maps/place/1600+N+Broadway+Suite+1660+Denver+CO+80202"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[var(--brand-gold)] transition"
+              >
+                1600 N Broadway
+                <br />
+                Suite 1660
+                <br />
+                Denver, CO 80202
+              </a>
             </li>
 
             <li>
               <span className="font-semibold text-white">Phone:</span>
               <br />
-              303-524-3636
+              <a
+                href="tel:+13035243636"
+                className="hover:text-[var(--brand-gold)] transition"
+              >
+                303-524-3636
+              </a>
             </li>
           </ul>
         </div>

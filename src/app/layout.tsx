@@ -67,6 +67,25 @@ export default function RootLayout({
               <Link href="/contact">Contact</Link>
             </nav>
 
+            {/* Contact Info */}
+            <div className="mt-6 text-xs text-gray-400">
+              <a
+                href="https://www.google.com/maps/place/1600+N+Broadway+Suite+1660+Denver+CO+80202"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[var(--brand-gold)] transition"
+              >
+                1600 N Broadway, Suite 1660, Denver, CO 80202
+              </a>
+              {" • "}
+              <a
+                href="tel:+13035243636"
+                className="hover:text-[var(--brand-gold)] transition"
+              >
+                303-524-3636
+              </a>
+            </div>
+
             <p className="mt-4 mx-auto max-w-3xl text-center text-xs leading-relaxed text-gray-400">
               The information on this website is provided for general
               informational purposes only and does not constitute legal advice.
