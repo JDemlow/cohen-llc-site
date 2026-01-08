@@ -87,7 +87,7 @@ export default function HomePage() {
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           <Link
             href="/practice-areas#commercial-litigation"
-            className="block rounded-lg bg-[var(--brand-navy)]/40 p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 hover:border-white/20 hover:shadow-black/10"
+            className="block rounded-lg bg-[var(--brand-navy)] p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/90 hover:border-white/20 hover:shadow-black/10"
           >
             <h3
               className="text-base font-semibold"
@@ -104,7 +104,7 @@ export default function HomePage() {
 
           <Link
             href="/practice-areas#franchise-litigation"
-            className="block rounded-lg bg-[var(--brand-navy)]/40 p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 hover:border-white/20 hover:shadow-black/10"
+            className="block rounded-lg bg-[var(--brand-navy)] p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/90 hover:border-white/20 hover:shadow-black/10"
           >
             <h3
               className="text-base font-semibold"
@@ -121,7 +121,7 @@ export default function HomePage() {
 
           <Link
             href="/practice-areas#bankruptcy-restructuring"
-            className="block rounded-lg bg-[var(--brand-navy)]/40 p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 hover:border-white/20 hover:shadow-black/10"
+            className="block rounded-lg bg-[var(--brand-navy)] p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/90 hover:border-white/20 hover:shadow-black/10"
           >
             <h3
               className="text-base font-semibold"
@@ -137,7 +137,7 @@ export default function HomePage() {
 
           <Link
             href="/practice-areas#business-transactions"
-            className="block rounded-lg bg-[var(--brand-navy)]/40 p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 hover:border-white/20 hover:shadow-black/10"
+            className="block rounded-lg bg-[var(--brand-navy)] p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/90 hover:border-white/20 hover:shadow-black/10"
           >
             <h3
               className="text-base font-semibold"
@@ -153,7 +153,7 @@ export default function HomePage() {
 
           <Link
             href="/practice-areas#civil-litigation"
-            className="block rounded-lg bg-[var(--brand-navy)]/40 p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 hover:border-white/20 hover:shadow-black/10"
+            className="block rounded-lg bg-[var(--brand-navy)] p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/90 hover:border-white/20 hover:shadow-black/10"
           >
             <h3
               className="text-base font-semibold"
