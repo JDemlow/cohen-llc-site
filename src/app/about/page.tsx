@@ -26,9 +26,16 @@ export default function AboutPage() {
       <section className="space-y-16">
         {/* Jeffrey Cohen - Principal */}
         <div className="grid gap-8 md:grid-cols-[300px_1fr] items-start">
-          {/* Photo Placeholder */}
-          <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto md:mx-0 overflow-hidden rounded-lg bg-white/5 flex items-center justify-center">
-            <span className="text-gray-500 text-sm">Photo Coming Soon</span>
+          {/* Photo */}
+          <div className="relative aspect-[3/4] w-full max-w-[300px] mx-auto md:mx-0 overflow-hidden rounded-lg">
+            <Image
+              src="/images/jeffrey-cohen.jpeg"
+              alt="Jeffrey Cohen, Principal at Cohen, LLC"
+              fill
+              className="object-cover object-top"
+              sizes="(max-width: 768px) 100vw, 300px"
+              priority
+            />
           </div>
 
           {/* Bio */}
@@ -198,7 +205,7 @@ export default function AboutPage() {
                 Court Admissions
               </h3>
 
-              <ul className="space-y-1 text-sm">
+              <ul className="space-y-1 text-sm text-[var(--brand-gold)]">
                 <li>• U.S. Bankruptcy Court, District of Colorado</li>
                 <li>• U.S. Bankruptcy Court, Eastern District of New York</li>
                 <li>• U.S. Bankruptcy Court, Southern District of New York</li>
@@ -251,7 +258,98 @@ export default function AboutPage() {
             </p>
 
             <div className="mt-6 space-y-4 text-sm sm:text-base text-gray-200/90 leading-relaxed">
-              <p>Attorney bio and background information will be added here.</p>
+              <p>
+                Tanner Sandor is an Associate Attorney at Cohen, LLC, where he
+                focuses his practice on commercial litigation and trial work. He
+                represents businesses and individuals in complex disputes
+                involving contracts, commercial transactions, and related
+                business matters, bringing a practical, solutions-oriented
+                approach to each case.
+              </p>
+
+              <p>
+                Before joining Cohen, LLC as an associate, Tanner served as a
+                law clerk with the firm, where he gained hands-on experience
+                supporting litigation strategy, legal research, and trial
+                preparation. His background allows him to approach disputes with
+                a strong understanding of both legal theory and real-world
+                business considerations.
+              </p>
+
+              <p>
+                Tanner earned his Juris Doctor from American University
+                Washington College of Law, where he served as Business &
+                Marketing Editor of the American University Business Law Review.
+                In that role, he supported the journal&apos;s digital and
+                public-facing presence and helped promote scholarship at the
+                intersection of law, regulation, and commerce. He also served as
+                Co-Chair of the Joint Journal Committee, helping administer the
+                schoolwide write-on competition across the law review and
+                academic journals.
+              </p>
+
+              <p>
+                During law school, Tanner participated in the Criminal Justice
+                Clinic (Defense) at American University Washington College of
+                Law, representing clients in Maryland state court. He defended a
+                client facing drug-related charges in Montgomery County and
+                secured a dismissal (nolle prosequi) on the case.
+              </p>
+
+              <p>
+                Before entering law school, Tanner worked as an Anti-Money
+                Laundering Analyst II at Promontory Financial Group (IBM
+                Promontory), where he supported global financial institutions
+                with fraud detection, suspicious activity monitoring, and
+                compliance risk analysis. His work included enhanced due
+                diligence and matters involving anti-corruption frameworks such
+                as the Foreign Corrupt Practices Act (FCPA) and the UK Bribery
+                Act, as well as developing and delivering training for more than
+                70 analysts. That background informs his practical approach to
+                complex disputes, particularly matters involving financial
+                transactions, compliance issues, and document-intensive
+                investigations.
+              </p>
+
+              <p>
+                Outside of the office, Tanner enjoys mountaineering and spending
+                time with his fiancée, Arielle and his dog, Tonks.
+              </p>
+
+              <h3
+                className="text-lg font-semibold mt-8 mb-3"
+                style={{ fontFamily: "var(--playfair)" }}
+              >
+                Education
+              </h3>
+
+              <ul className="space-y-1 text-sm">
+                <li>• American University Washington College of Law (J.D.)</li>
+              </ul>
+
+              <h3
+                className="text-lg font-semibold mt-8 mb-3"
+                style={{ fontFamily: "var(--playfair)" }}
+              >
+                Bar Admissions
+              </h3>
+
+              <ul className="space-y-1 text-sm">
+                <li>• Colorado</li>
+              </ul>
+
+              <h3
+                className="text-lg font-semibold mt-8 mb-3"
+                style={{ fontFamily: "var(--playfair)" }}
+              >
+                Court Admissions
+              </h3>
+
+              <ul className="space-y-1 text-sm">
+                <li className="text-[var(--brand-gold)]">
+                  • U.S. District Court, District of Colorado
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -283,28 +381,47 @@ export default function AboutPage() {
 
             <div className="mt-6 space-y-4 text-sm sm:text-base text-gray-200/90 leading-relaxed">
               <p>
-                Katelyn Bowles is a senior law firm professional with over a
-                decade of experience supporting attorneys and managing the daily
-                functions of law practices. At Cohen, LLC, she plays a key role
-                in the firm&apos;s day-to-day operations and administrative
-                oversight.
+                As Practice Manager at Cohen, LLC, Katelyn brings extensive
+                legal experience and provides strategic oversight of the
+                firm&apos;s operations and financial administration. She is
+                responsible for firm billing and collections, budgeting and
+                forecasting, trust and operating account management, vendor and
+                contract oversight, and internal systems, ensuring efficiency,
+                compliance, and operational continuity.
               </p>
 
               <p>
-                Katelyn is responsible for client billing and invoicing, vendor
-                coordination, internal workflows, and working closely with
-                attorneys to ensure efficiency, accuracy, and consistency across
-                the firm.
+                Working closely with firm leadership, she supports the
+                firm&apos;s business objectives, manages risk, and implements
+                processes that promote accountability, scalability, and
+                long-term stability. Katelyn is also an experienced and
+                Certified Paralegal who brings both formal legal training and
+                hands-on operational expertise to her role.
               </p>
 
               <p>
-                Katelyn brings paralegal and management experience from both
-                large international firms and boutique practices. She provides a
-                broad understanding of law firm structure and business
-                processes. She is known for her attention to detail, discretion,
-                and ability to manage complex administrative and financial
-                responsibilities with precision.
+                In Katelyn&apos;s free time she enjoys traveling with her
+                husband Gregg, hiking with her dogs, running, cycling and
+                exploring the great outdoors. She is also a photographer who has
+                had her work displayed in both Pittsburgh and Denver.
               </p>
+
+              <h3
+                className="text-lg font-semibold mt-8 mb-3"
+                style={{ fontFamily: "var(--playfair)" }}
+              >
+                Education
+              </h3>
+
+              <ul className="space-y-1 text-sm">
+                <li>
+                  • Gannon University - Bachelor of Arts in Legal Studies
+                  (ABA-accredited)
+                </li>
+                <li>
+                  • Gannon University - Paralegal Certificate (ABA-accredited)
+                </li>
+              </ul>
             </div>
           </div>
         </div>
