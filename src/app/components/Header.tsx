@@ -10,8 +10,8 @@ export default function Header() {
   return (
     <header className="py-4 border-b border-white/10">
       <nav className="flex items-center justify-between">
-        {/* Brand Logo */}
-        <Link href="/" className="flex items-center">
+        {/* Brand Logo with Gold Underline */}
+        <Link href="/" className="group inline-block">
           <Image
             src="/cohen-logo-header.svg"
             alt="Cohen, LLC"
@@ -19,6 +19,7 @@ export default function Header() {
             height={32}
             priority
           />
+          <div className="h-[2px] w-0 bg-[var(--brand-gold)] transition-all duration-300 group-hover:w-full"></div>
         </Link>
 
         {/* Desktop nav */}
