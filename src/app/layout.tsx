@@ -50,21 +50,41 @@ export default function RootLayout({
           </main>
 
           <footer className="mt-24 border-t border-white/10 py-10 text-center text-sm text-gray-300">
-            {/* Logo */}
-            <div className="flex justify-center mb-6">
+            {/* Logo - Now Clickable */}
+            <Link href="/" className="inline-block mb-6">
               <Image
                 src="/cohen-logo.svg"
                 alt="Cohen, LLC"
                 width={200}
                 height={40}
               />
-            </div>
+            </Link>
 
-            <nav className="mt-3 flex justify-center gap-6 text-xs sm:text-sm">
-              <Link href="/">Home</Link>
-              <Link href="/practice-areas">Practice Areas</Link>
-              <Link href="/about">Who We Are</Link>
-              <Link href="/contact">Contact</Link>
+            <nav className="mt-3 flex justify-center gap-6 text-xs sm:text-sm text-[var(--brand-gold)]">
+              <Link
+                href="/"
+                className="hover:text-[var(--brand-gold)]/80 transition"
+              >
+                Home
+              </Link>
+              <Link
+                href="/practice-areas"
+                className="hover:text-[var(--brand-gold)]/80 transition"
+              >
+                Practice Areas
+              </Link>
+              <Link
+                href="/about"
+                className="hover:text-[var(--brand-gold)]/80 transition"
+              >
+                Who We Are
+              </Link>
+              <Link
+                href="/contact"
+                className="hover:text-[var(--brand-gold)]/80 transition"
+              >
+                Contact
+              </Link>
             </nav>
 
             {/* Contact Info */}
