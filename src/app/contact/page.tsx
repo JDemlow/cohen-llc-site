@@ -66,6 +66,7 @@ export default function ContactPage() {
             steps.
           </>
         }
+        withBackground
       />
       {/* Divider */}
       <div className="my-10 h-px w-full bg-white/10"></div>

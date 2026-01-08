@@ -5,6 +5,7 @@ type SectionHeaderProps = {
   title: string;
   description?: ReactNode;
   as?: "h1" | "h2";
+  withBackground?: boolean;
 };
 
 export default function SectionHeader({
@@ -12,6 +13,7 @@ export default function SectionHeader({
   title,
   description,
   as = "h2",
+  withBackground = false,
 }: SectionHeaderProps) {
   const HeadingTag = as;
 
@@ -20,8 +22,8 @@ export default function SectionHeader({
       ? "mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight"
       : "mt-4 text-2xl sm:text-3xl font-semibold leading-tight";
 
-  return (
-    <div>
+  const content = (
+    <>
       <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--brand-gold)]">
         {eyebrow}
       </p>
@@ -38,6 +40,16 @@ export default function SectionHeader({
           {description}
         </p>
       ) : null}
-    </div>
+    </>
   );
+
+  if (withBackground) {
+    return (
+      <div className="rounded-lg bg-[var(--brand-navy)] px-6 py-8 border border-white/10">
+        {content}
+      </div>
+    );
+  }
+
+  return <div>{content}</div>;
 }

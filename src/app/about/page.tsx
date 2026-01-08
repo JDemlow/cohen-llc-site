@@ -18,6 +18,7 @@ export default function AboutPage() {
         eyebrow="Who We Are"
         title="Our Team"
         description="Cohen, LLC is a boutique law firm committed to providing exceptional legal representation in commercial litigation, franchise law, bankruptcy, and business transactions."
+        withBackground
       />
 
       {/* Divider */}

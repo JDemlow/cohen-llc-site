@@ -183,8 +183,8 @@ export default function HomePage() {
           litigation, and the legal profession.
         </p>
 
-        <div className="mt-10 flex justify-center sm:justify-start">
-          <PrimaryButton href="/about">Learn More About Our Team</PrimaryButton>
+        <div className="mt-6">
+          <PrimaryButton href="/about">Meet the Team</PrimaryButton>
         </div>
       </section>
 
@@ -196,7 +196,7 @@ export default function HomePage() {
           Recognition
         </h2>
 
-        <div className="mt-6 rounded-lg bg-[var(--brand-navy)] p-6 border border-white/10 shadow-lg shadow-black/5">
+        <div className="mt-6 rounded-lg bg-[var(--brand-navy)]/40 p-6 border border-white/10 shadow-lg shadow-black/5">
           <p className="text-sm sm:text-base text-gray-200/90 leading-relaxed">
             &ldquo;Having seen a number of pleadings in this hard-fought matter,
             it is the court&apos;s belief that the quality of representation in

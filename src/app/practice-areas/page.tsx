@@ -25,6 +25,7 @@ export default function PracticeAreasPage() {
             disputes and transactions our attorneys handle.
           </>
         }
+        withBackground
       />
       <div className="my-10 h-px w-full bg-white/10"></div>
 
