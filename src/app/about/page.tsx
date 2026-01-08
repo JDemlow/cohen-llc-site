@@ -21,10 +21,10 @@ export default function AboutPage() {
       />
 
       {/* Divider */}
-      <div className="my-16 h-px w-full bg-white/10"></div>
+      <div className="my-10 h-px w-full bg-white/10"></div>
 
       {/* Attorney Profiles */}
-      <section className="space-y-16">
+      <section className="space-y-12">
         {/* Jeffrey Cohen - Principal */}
         <div className="grid gap-8 md:grid-cols-[300px_1fr] items-start">
           {/* Photo */}
@@ -429,7 +429,7 @@ export default function AboutPage() {
       </section>
 
       {/* Divider */}
-      <div className="my-16 h-px w-full bg-white/10"></div>
+      <div className="my-10 h-px w-full bg-white/10"></div>
 
       {/* Firm Philosophy */}
       <section>

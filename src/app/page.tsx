@@ -63,7 +63,7 @@ export default function HomePage() {
       </section>
 
       {/* Subtle section divider */}
-      <div className="my-16 h-px w-full bg-white/10" />
+      <div className="my-10 h-px w-full bg-white/10" />
 
       {/* Practice Areas skeleton */}
       <section className="mt-24">

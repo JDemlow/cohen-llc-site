@@ -68,9 +68,9 @@ export default function ContactPage() {
         }
       />
       {/* Divider */}
-      <div className="my-16 h-px w-full bg-white/10"></div>
+      <div className="my-10 h-px w-full bg-white/10"></div>
       {/* Form + Contact Info Section */}
-      <section className="mt-12 rounded-lg bg-[var(--brand-navy)]/10 px-6 py-12 grid gap-12 sm:grid-cols-2">
+      <section className="mt-8 rounded-lg bg-[var(--brand-navy)]/20 px-6 py-8 grid gap-8 sm:grid-cols-2 border border-white/20">
         {/* Contact Form */}
         <div>
           <h2
@@ -284,7 +284,7 @@ export default function ContactPage() {
         </div>
       </section>
       {/* Divider */}
-      <div className="my-16 h-px w-full bg-white/10"></div>
+      <div className="my-10 h-px w-full bg-white/10"></div>
       {/* Office Location */}
       <section className="mt-12">
         <h2

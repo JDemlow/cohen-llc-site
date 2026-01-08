@@ -26,7 +26,7 @@ export default function PracticeAreasPage() {
           </>
         }
       />
-      <div className="my-16 h-px w-full bg-white/10"></div>
+      <div className="my-10 h-px w-full bg-white/10"></div>
 
       {/* Commercial Litigation */}
       <div id="commercial-litigation">
@@ -58,7 +58,7 @@ export default function PracticeAreasPage() {
         </Card>
       </div>
 
-      <div className="my-16 h-px w-full bg-white/10"></div>
+      <div className="my-10 h-px w-full bg-white/10"></div>
 
       {/* Franchise Litigation */}
       <div id="franchise-litigation">
@@ -88,7 +88,7 @@ export default function PracticeAreasPage() {
         </Card>
       </div>
 
-      <div className="my-16 h-px w-full bg-white/10"></div>
+      <div className="my-10 h-px w-full bg-white/10"></div>
 
       {/* Bankruptcy & Restructuring */}
       <div id="bankruptcy-restructuring">
@@ -150,7 +150,7 @@ export default function PracticeAreasPage() {
         </Card>
       </div>
 
-      <div className="my-16 h-px w-full bg-white/10"></div>
+      <div className="my-10 h-px w-full bg-white/10"></div>
 
       {/* Civil Litigation */}
       <div id="civil-litigation">
