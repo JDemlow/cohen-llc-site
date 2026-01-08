@@ -86,7 +86,7 @@ export default function HomePage() {
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
           <Link
-            href="/practice-areas"
+            href="/practice-areas#commercial-litigation"
             className="block rounded-lg bg-[var(--brand-navy)]/40 p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 hover:border-white/20 hover:shadow-black/10"
           >
             <h3
@@ -103,7 +103,7 @@ export default function HomePage() {
           </Link>
 
           <Link
-            href="/practice-areas"
+            href="/practice-areas#franchise-litigation"
             className="block rounded-lg bg-[var(--brand-navy)]/40 p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 hover:border-white/20 hover:shadow-black/10"
           >
             <h3
@@ -120,7 +120,7 @@ export default function HomePage() {
           </Link>
 
           <Link
-            href="/practice-areas"
+            href="/practice-areas#bankruptcy-restructuring"
             className="block rounded-lg bg-[var(--brand-navy)]/40 p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 hover:border-white/20 hover:shadow-black/10"
           >
             <h3
@@ -136,7 +136,7 @@ export default function HomePage() {
           </Link>
 
           <Link
-            href="/practice-areas"
+            href="/practice-areas#business-transactions"
             className="block rounded-lg bg-[var(--brand-navy)]/40 p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 hover:border-white/20 hover:shadow-black/10"
           >
             <h3
@@ -152,7 +152,7 @@ export default function HomePage() {
           </Link>
 
           <Link
-            href="/practice-areas"
+            href="/practice-areas#civil-litigation"
             className="block rounded-lg bg-[var(--brand-navy)]/40 p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/50 hover:border-white/20 hover:shadow-black/10"
           >
             <h3
@@ -183,42 +183,8 @@ export default function HomePage() {
           litigation, and the legal profession.
         </p>
 
-        <div className="mt-6">
-          <Link
-            href="/about"
-            className="inline-block rounded-md bg-[var(--brand-gold)] px-8 py-4 text-base font-semibold tracking-wide text-black transition hover:bg-[var(--brand-gold)]/90"
-          >
-            Meet the Team
-          </Link>
-        </div>
-      </section>
-
-      <section className="mt-16">
-        <h2
-          className="text-2xl sm:text-3xl font-semibold"
-          style={{ fontFamily: "var(--playfair)" }}
-        >
-          Recognition
-        </h2>
-
-        <div className="mt-6 rounded-lg bg-[var(--brand-navy)]/40 p-6 border border-white/10 shadow-lg shadow-black/5">
-          <p className="text-sm sm:text-base text-gray-200/90 leading-relaxed">
-            &ldquo;Having seen a number of pleadings in this hard-fought matter,
-            it is the court&apos;s belief that the quality of representation in
-            this matter by both sides is nothing short of exceptional. . . . Mr.
-            Cohen&apos;s resume and experience of 39 years, the numerous complex
-            commercial cases and trials he has participated in, the honors
-            bestowed upon him, and the quality of his clients would reflect he
-            is at or near the top of counsel in his areas of practice.&rdquo;
-          </p>
-
-          <p className="mt-4 text-xs sm:text-sm text-gray-300/80">
-            - G.D. Miller, District Court Judge.{" "}
-            <span className="italic">
-              Creekstone Development Inc. v. Top Down Construction, LLC.
-            </span>{" "}
-            2019CV31796
-          </p>
+        <div className="mt-10 flex justify-center sm:justify-start">
+          <PrimaryButton href="/about">Learn More About Our Team</PrimaryButton>
         </div>
       </section>
     </main>
