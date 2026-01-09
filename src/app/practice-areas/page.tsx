@@ -31,7 +31,7 @@ export default function PracticeAreasPage() {
 
       {/* Commercial Litigation */}
       <div id="commercial-litigation">
-        <Card className="mt-12">
+        <Card className="mt-12" hover={false}>
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
@@ -63,7 +63,7 @@ export default function PracticeAreasPage() {
 
       {/* Franchise Litigation */}
       <div id="franchise-litigation">
-        <Card className="mt-12">
+        <Card className="mt-12" hover={false}>
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
@@ -93,7 +93,7 @@ export default function PracticeAreasPage() {
 
       {/* Bankruptcy & Restructuring */}
       <div id="bankruptcy-restructuring">
-        <Card className="mt-12">
+        <Card className="mt-12" hover={false}>
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
@@ -124,7 +124,7 @@ export default function PracticeAreasPage() {
 
       {/* Business & Franchise Transactions */}
       <div id="business-transactions">
-        <Card className="mt-12">
+        <Card className="mt-12" hover={false}>
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
@@ -155,7 +155,7 @@ export default function PracticeAreasPage() {
 
       {/* Civil Litigation */}
       <div id="civil-litigation">
-        <Card className="mt-12">
+        <Card className="mt-12" hover={false}>
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
