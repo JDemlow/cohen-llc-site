@@ -129,11 +129,14 @@ export default function ContactPage() {
                 name="email"
                 type="email"
                 autoComplete="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Please enter a valid email address"
                 required
                 disabled={isSubmitting}
                 className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
                   border border-white/20 focus:border-[var(--brand-gold)] 
-                  focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
+                  focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed
+                  invalid:border-red-500"
               />
             </div>
 

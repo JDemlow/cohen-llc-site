@@ -22,43 +22,56 @@ export default function Header() {
           <div className="h-[2px] w-0 bg-[var(--brand-gold)] transition-all duration-300 group-hover:w-full"></div>
         </Link>
 
-        {/* Desktop nav */}
-        <ul className="hidden sm:flex flex-wrap gap-4 text-xs sm:gap-6 sm:text-sm">
-          <li>
-            <Link href="/" className="opacity-80 hover:opacity-100 transition">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/practice-areas"
-              className="opacity-80 hover:opacity-100 transition"
-            >
-              Practice Areas
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/about"
-              className="opacity-80 hover:opacity-100 transition"
-            >
-              Who We Are
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact"
-              className="opacity-80 hover:opacity-100 transition"
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+        {/* Desktop nav + CTA */}
+        <div className="hidden lg:flex items-center gap-8">
+          <ul className="flex flex-wrap gap-6 text-sm">
+            <li>
+              <Link
+                href="/"
+                className="opacity-80 hover:opacity-100 transition"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/practice-areas"
+                className="opacity-80 hover:opacity-100 transition"
+              >
+                Practice Areas
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="opacity-80 hover:opacity-100 transition"
+              >
+                Who We Are
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="opacity-80 hover:opacity-100 transition"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+
+          {/* CTA Button */}
+          <Link
+            href="/contact"
+            className="inline-block rounded-md bg-[var(--brand-gold)] px-6 py-2.5 text-xs font-semibold uppercase tracking-wide text-black transition hover:bg-[var(--brand-gold)]/90 whitespace-nowrap"
+          >
+            Schedule Consultation
+          </Link>
+        </div>
 
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="sm:hidden inline-flex items-center justify-center rounded-md p-3 text-gray-100 hover:bg-white/10 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--brand-navy)]"
+          className="lg:hidden inline-flex items-center justify-center rounded-md p-3 text-gray-100 hover:bg-white/10 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-gold)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--brand-navy)]"
           aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((open) => !open)}

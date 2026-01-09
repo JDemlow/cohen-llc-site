@@ -455,14 +455,6 @@ export default function AboutPage() {
             thinking, and achieving the best possible outcomes for our clients.
           </p>
         </div>
-
-        {/* Subtle CTA at end of content */}
-        <div className="mt-8 inline-block">
-          <p className="text-sm text-gray-400 mb-3">
-            Ready to work with our team?
-          </p>
-          <PrimaryButton href="/contact">Schedule a Consultation</PrimaryButton>
-        </div>
       </section>
     </main>
   );
