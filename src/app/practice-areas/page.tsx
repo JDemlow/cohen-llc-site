@@ -1,5 +1,6 @@
 // app/practice-areas/page.tsx
 
+import Image from "next/image";
 import PrimaryButton from "../components/PrimaryButton";
 import SectionHeader from "../components/SectionHeader";
 import Card from "../components/Card";
@@ -181,6 +182,22 @@ export default function PracticeAreasPage() {
             <li>Professional liability matters</li>
           </ul>
         </Card>
+      </div>
+
+      {/* Office Photo Section */}
+      <div className="mt-24 pt-16 border-t border-white/10">
+        <div className="relative w-full h-[400px] sm:h-[500px] rounded-lg overflow-hidden">
+          <Image
+            src="/images/cohen-office.webp"
+            alt="Cohen, LLC office interior - modern conference room with city views"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+          />
+        </div>
+        <p className="mt-4 text-center text-sm text-gray-200/70 italic">
+          Our Denver office in the Bok Financial Building
+        </p>
       </div>
 
       {/* Bottom CTA */}
