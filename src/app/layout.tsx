@@ -95,7 +95,8 @@ export default function RootLayout({
                 rel="noopener noreferrer"
                 className="hover:text-[var(--brand-gold)] transition"
               >
-                1600 N Broadway, Suite 1660, Denver, CO 80202
+                Bok Financial Building, 1600 N Broadway, Suite 1660, Denver, CO
+                80202
               </a>
               {" • "}
               <a
