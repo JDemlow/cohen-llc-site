@@ -31,7 +31,7 @@ export default function PracticeAreasPage() {
 
       {/* Commercial Litigation */}
       <div id="commercial-litigation">
-        <Card className="mt-12" hover={false}>
+        <Card className="mt-12">
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
@@ -63,7 +63,7 @@ export default function PracticeAreasPage() {
 
       {/* Franchise Litigation */}
       <div id="franchise-litigation">
-        <Card className="mt-12" hover={false}>
+        <Card className="mt-12">
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
@@ -93,7 +93,7 @@ export default function PracticeAreasPage() {
 
       {/* Bankruptcy & Restructuring */}
       <div id="bankruptcy-restructuring">
-        <Card className="mt-12" hover={false}>
+        <Card className="mt-12">
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
@@ -124,7 +124,7 @@ export default function PracticeAreasPage() {
 
       {/* Business & Franchise Transactions */}
       <div id="business-transactions">
-        <Card className="mt-12" hover={false}>
+        <Card className="mt-12">
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
@@ -155,7 +155,7 @@ export default function PracticeAreasPage() {
 
       {/* Civil Litigation */}
       <div id="civil-litigation">
-        <Card className="mt-12" hover={false}>
+        <Card className="mt-12">
           <h2
             className="text-xl font-semibold"
             style={{ fontFamily: "var(--playfair)" }}
@@ -190,7 +190,9 @@ export default function PracticeAreasPage() {
         </p>
 
         <div className="mt-6">
-          <PrimaryButton href="/contact">Schedule a Consultation</PrimaryButton>
+          <PrimaryButton href="/contact">
+            Schedule a Free Consultation
+          </PrimaryButton>
         </div>
       </div>
     </main>

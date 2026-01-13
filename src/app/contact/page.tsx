@@ -57,7 +57,7 @@ export default function ContactPage() {
       <SectionHeader
         as="h1"
         eyebrow="Contact"
-        title="Schedule a Consultation"
+        title="Schedule a Free Consultation"
         description={
           <>
             Use the form below to contact Cohen, LLC regarding business,

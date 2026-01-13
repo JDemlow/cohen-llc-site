@@ -56,7 +56,7 @@ export default function HomePage() {
 
           <div className="mt-8 flex justify-center sm:justify-start">
             <PrimaryButton href="/contact">
-              Schedule a Consultation
+              Schedule a Free Consultation
             </PrimaryButton>
           </div>
         </div>

@@ -64,7 +64,7 @@ export default function Header() {
             href="/contact"
             className="inline-block rounded-md bg-[var(--brand-gold)] px-6 py-2.5 text-xs font-semibold uppercase tracking-wide text-black transition hover:bg-[var(--brand-gold)]/90 whitespace-nowrap"
           >
-            Schedule Consultation
+            Schedule Free Consultation
           </Link>
         </div>
 
