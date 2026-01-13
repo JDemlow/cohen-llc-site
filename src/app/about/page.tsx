@@ -326,7 +326,10 @@ export default function AboutPage() {
               </h3>
 
               <ul className="space-y-1 text-sm">
-                <li>• American University Washington College of Law (J.D.)</li>
+                <li>
+                  • American University Washington College of Law (J.D., 2024)
+                </li>
+                <li>• Tulane University (B.S., 2016)</li>
               </ul>
 
               <h3
