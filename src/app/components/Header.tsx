@@ -14,9 +14,10 @@ export default function Header() {
         <Link href="/" className="group inline-block">
           <Image
             src="/cohen-logo-header.svg"
-            alt="Cohen, LLC"
-            width={160}
-            height={32}
+            alt="Cohen, LLC - Attorneys At Law"
+            width={316}
+            height={95}
+            className="w-[200px] sm:w-[260px] lg:w-[316px] h-auto"
             priority
           />
           <div className="h-[2px] w-0 bg-[var(--brand-gold)] transition-all duration-300 group-hover:w-full"></div>

@@ -54,9 +54,10 @@ export default function RootLayout({
             <Link href="/" className="inline-block mb-6">
               <Image
                 src="/cohen-logo.svg"
-                alt="Cohen, LLC"
-                width={200}
-                height={40}
+                alt="Cohen, LLC - Attorneys At Law"
+                width={396}
+                height={119}
+                className="w-[250px] sm:w-[330px] lg:w-[396px] h-auto mx-auto"
               />
             </Link>
 
