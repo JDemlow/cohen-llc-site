@@ -417,11 +417,12 @@ export default function AboutPage() {
 
               <ul className="space-y-1 text-sm">
                 <li>
-                  • Gannon University - Bachelor of Arts in Legal Studies
-                  (ABA-accredited)
+                  • Gannon University (B.A. in Legal Studies, ABA-accredited,
+                  2009)
                 </li>
                 <li>
-                  • Gannon University - Paralegal Certificate (ABA-accredited)
+                  • Gannon University (Paralegal Certificate, ABA-accredited,
+                  2009)
                 </li>
               </ul>
             </div>
