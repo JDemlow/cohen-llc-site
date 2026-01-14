@@ -84,7 +84,7 @@ export default function HomePage() {
           conflicts, and other civil litigation and transactional matters.
         </p>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 [&>*:last-child:nth-child(odd)]:col-span-2 [&>*:last-child:nth-child(odd)]:max-w-md [&>*:last-child:nth-child(odd)]:mx-auto">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 sm:[&>*:last-child:nth-child(odd)]:col-span-2 sm:[&>*:last-child:nth-child(odd)]:max-w-md sm:[&>*:last-child:nth-child(odd)]:mx-auto">
           <Link
             href="/practice-areas#commercial-litigation"
             className="block rounded-lg bg-[var(--brand-navy)] p-4 border border-white/10 shadow-lg shadow-black/5 transition transform hover:-translate-y-1 hover:bg-[var(--brand-navy)]/90 hover:border-white/20 hover:shadow-black/10"
