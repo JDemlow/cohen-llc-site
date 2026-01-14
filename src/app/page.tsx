@@ -29,7 +29,7 @@ export default function HomePage() {
   return (
     <main className="py-16">
       <section className="rounded-lg bg-[var(--brand-navy)] px-4 py-16 sm:px-8 sm:py-20">
-        <div className="sm:max-w-2xl">
+        <div className="max-w-3xl mx-auto text-center">
           <span className="text-sm font-semibold text-[color:var(--brand-gold)] tracking-wide uppercase">
             Attorneys and Counselors at Law
           </span>
@@ -41,20 +41,20 @@ export default function HomePage() {
             Cohen Trial - The Commercial Litigation Attorneys of Denver
           </h1>
 
-          <p className="mt-4 text-sm sm:text-base text-gray-200/90 max-w-2xl">
+          <p className="mt-4 text-sm sm:text-base text-gray-200/90 max-w-2xl mx-auto">
             Cohen, LLC is a boutique law firm in Denver representing clients in
             business, franchise, bankruptcy, and other civil and commercial
             matters.
           </p>
 
-          <p className="mt-3 text-sm sm:text-base text-gray-200/90 max-w-2xl">
+          <p className="mt-3 text-sm sm:text-base text-gray-200/90 max-w-2xl mx-auto">
             Our trial attorneys have represented hundreds of clients before
             state and federal courts across the country. We also represent
             clients in transactional matters including franchising, mergers,
             acquisitions, and business legal strategy.
           </p>
 
-          <div className="mt-8 flex justify-center sm:justify-start">
+          <div className="mt-8 flex justify-center">
             <PrimaryButton href="/contact">
               Schedule a Free Consultation
             </PrimaryButton>

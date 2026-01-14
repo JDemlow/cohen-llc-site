@@ -266,7 +266,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="hover:text-[var(--brand-gold)] transition"
               >
-                Bok Financial Building
+                BOK Financial Building
                 <br />
                 1600 N Broadway
                 <br />
@@ -301,7 +301,7 @@ export default function ContactPage() {
         </h2>
 
         <p className="mt-3 text-sm text-gray-200/80 leading-relaxed max-w-xl">
-          The Denver office is located in the Bok Financial Building at 1600 N
+          The Denver office is located in the BOK Financial Building at 1600 N
           Broadway, Suite 1660, in the downtown corridor. View the location on
           Google Maps below.
         </p>

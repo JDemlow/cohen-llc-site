@@ -196,7 +196,7 @@ export default function PracticeAreasPage() {
           />
         </div>
         <p className="mt-4 text-center text-sm text-gray-200/70 italic">
-          Our Denver office in the Bok Financial Building
+          Our Denver office in the BOK Financial Building
         </p>
       </div>
 
