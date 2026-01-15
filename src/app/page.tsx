@@ -30,10 +30,6 @@ export default function HomePage() {
     <main className="py-16">
       <section className="rounded-lg bg-[var(--brand-navy)] px-4 py-16 sm:px-8 sm:py-20">
         <div className="max-w-3xl mx-auto text-center">
-          <span className="text-sm font-semibold text-[color:var(--brand-gold)] tracking-wide uppercase">
-            Attorneys and Counselors at Law
-          </span>
-
           <h1
             className="mt-4 text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight"
             style={{ fontFamily: "var(--playfair)" }}
