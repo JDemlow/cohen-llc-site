@@ -23,7 +23,7 @@ export default function Header() {
           <div className="h-[2px] w-0 bg-[var(--brand-gold)] transition-all duration-300 group-hover:w-full"></div>
         </Link>
 
-        {/* Desktop nav + CTA */}
+        {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8">
           <ul className="flex flex-wrap gap-6 text-sm">
             <li>
@@ -59,14 +59,6 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-
-          {/* CTA Button */}
-          <Link
-            href="/contact"
-            className="inline-block rounded-md bg-[var(--brand-gold)] px-6 py-2.5 text-xs font-semibold uppercase tracking-wide text-black transition hover:bg-[var(--brand-gold)]/90 whitespace-nowrap"
-          >
-            Schedule Free Consultation
-          </Link>
         </div>
 
         {/* Mobile hamburger */}

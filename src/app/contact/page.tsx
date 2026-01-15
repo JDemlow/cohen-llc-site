@@ -1,9 +1,6 @@
-// app/contact/page.tsx
-
 "use client";
 
 import { useState } from "react";
-import SectionHeader from "../components/SectionHeader";
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -53,25 +50,8 @@ export default function ContactPage() {
 
   return (
     <main className="py-16">
-      {/* Intro Section */}
-      <SectionHeader
-        as="h1"
-        eyebrow="Contact"
-        title="Schedule a Free Consultation"
-        description={
-          <>
-            Use the form below to contact Cohen, LLC regarding business,
-            franchise, bankruptcy, or commercial litigation matters. A member of
-            our team will review your message and follow up to discuss next
-            steps.
-          </>
-        }
-        withBackground
-      />
-      {/* Divider */}
-      <div className="my-10 h-px w-full bg-white/10"></div>
       {/* Form + Contact Info Section */}
-      <section className="mt-8 rounded-lg bg-[var(--brand-navy)]/20 px-6 py-8 grid gap-8 sm:grid-cols-2 border border-white/20">
+      <section className="rounded-lg bg-[var(--brand-navy)]/20 px-6 py-8 grid gap-8 sm:grid-cols-2 border border-white/20">
         {/* Contact Form */}
         <div>
           <h2
@@ -86,256 +66,196 @@ export default function ContactPage() {
             matter.
           </p>
 
-          {/* Error Message */}
           {error && (
-            <div className="mt-6 rounded-lg bg-red-900/20 border border-red-500/50 px-4 py-3">
-              <p className="text-sm text-red-200">{error}</p>
+            <div
+              role="alert"
+              className="mt-4 rounded-md bg-red-900/20 border border-red-500/50 px-4 py-3 text-sm text-red-200"
+            >
+              {error}
             </div>
           )}
 
-          {/* Form */}
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
-            {/* NAME */}
+            {/* Name */}
             <div>
               <label
                 htmlFor="name"
-                className="mb-1 block text-sm text-gray-200/80"
+                className="block text-sm font-medium text-gray-200"
               >
                 Name
               </label>
               <input
+                type="text"
                 id="name"
                 name="name"
-                type="text"
-                autoComplete="name"
                 required
-                disabled={isSubmitting}
-                className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-                  border border-white/20 focus:border-[var(--brand-gold)] 
-                  focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
+                className="mt-1 block w-full rounded-md border-white/20 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-gray-400 shadow-sm focus:border-[var(--brand-gold)] focus:ring focus:ring-[var(--brand-gold)] focus:ring-opacity-50"
               />
             </div>
 
-            {/* EMAIL */}
+            {/* Email */}
             <div>
               <label
                 htmlFor="email"
-                className="mb-1 block text-sm text-gray-200/80"
+                className="block text-sm font-medium text-gray-200"
               >
                 Email
               </label>
               <input
+                type="email"
                 id="email"
                 name="email"
-                type="email"
-                autoComplete="email"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                title="Please enter a valid email address"
                 required
-                disabled={isSubmitting}
-                className="w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-                  border border-white/20 focus:border-[var(--brand-gold)] 
-                  focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed
-                  invalid:border-red-500"
+                className="mt-1 block w-full rounded-md border-white/20 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-gray-400 shadow-sm focus:border-[var(--brand-gold)] focus:ring focus:ring-[var(--brand-gold)] focus:ring-opacity-50"
               />
             </div>
 
-            {/* MESSAGE */}
+            {/* Message */}
             <div>
               <label
                 htmlFor="message"
-                className="mb-1 block text-sm text-gray-200/80"
+                className="block text-sm font-medium text-gray-200"
               >
                 Message
               </label>
               <textarea
                 id="message"
                 name="message"
-                rows={5}
+                rows={6}
                 required
-                disabled={isSubmitting}
-                className="h-32 w-full rounded-md bg-white/5 px-4 py-3 text-sm text-white 
-                  border border-white/20 focus:border-[var(--brand-gold)] 
-                  focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed"
-              />
+                className="mt-1 block w-full rounded-md border-white/20 bg-white/5 px-4 py-2.5 text-sm text-white placeholder-gray-400 shadow-sm focus:border-[var(--brand-gold)] focus:ring focus:ring-[var(--brand-gold)] focus:ring-opacity-50 resize-none"
+              ></textarea>
             </div>
-
-            {/* Compliance Notice */}
-            <p className="text-xs leading-relaxed text-gray-400">
-              Submitting this form does not create an attorney&ndash;client
-              relationship. Please do not include confidential or
-              time&ndash;sensitive information.
-            </p>
 
             {/* Acknowledgment Checkbox */}
-            <div className="pt-2">
-              <div className="flex items-start gap-3">
-                <input
-                  id="acknowledgment"
-                  name="acknowledgment"
-                  type="checkbox"
-                  value="yes"
-                  required
-                  disabled={isSubmitting}
-                  className="mt-1 h-4 w-4 rounded-sm border border-white/20 bg-white/5 
-                    text-[var(--brand-gold)] focus:ring-[var(--brand-gold)] 
-                    disabled:opacity-50 disabled:cursor-not-allowed"
-                  aria-describedby="acknowledgment-description"
-                />
-
-                <div className="text-xs leading-relaxed text-gray-300">
-                  <p id="acknowledgment-description">
-                    I understand that submitting this form does not create an
-                    attorney&ndash;client relationship and that no confidential
-                    information should be included.
-                  </p>
-                </div>
-              </div>
+            <div className="flex items-start gap-3 pt-2">
+              <input
+                type="checkbox"
+                id="acknowledgment"
+                name="acknowledgment"
+                required
+                className="mt-1 h-4 w-4 rounded border-white/20 bg-white/5 text-[var(--brand-gold)] focus:ring-[var(--brand-gold)] focus:ring-opacity-50"
+              />
+              <label
+                htmlFor="acknowledgment"
+                className="text-xs text-gray-300 leading-relaxed"
+              >
+                I acknowledge that contacting Cohen, LLC through this form does
+                not create an attorney-client relationship. Do not include
+                confidential or time-sensitive information in this message.
+              </label>
             </div>
 
-            {/* Submit Button */}
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="inline-flex items-center justify-center gap-2 rounded-md bg-[var(--brand-gold)] px-8 py-4 text-base font-semibold tracking-wide text-black transition hover:bg-[var(--brand-gold)]/90 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {isSubmitting ? (
-                <>
-                  <svg
-                    className="animate-spin h-5 w-5 text-black"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <circle
-                      className="opacity-25"
-                      cx="12"
-                      cy="12"
-                      r="10"
-                      stroke="currentColor"
-                      strokeWidth="4"
-                    ></circle>
-                    <path
-                      className="opacity-75"
-                      fill="currentColor"
-                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                    ></path>
-                  </svg>
-                  Sending...
-                </>
-              ) : (
-                "Submit"
-              )}
-            </button>
+            {/* Submit */}
+            <div>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="inline-block rounded-md bg-[var(--brand-gold)] px-6 py-2.5 text-xs font-semibold uppercase tracking-wide text-black transition hover:bg-[var(--brand-gold)]/90 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
+              </button>
+            </div>
           </form>
-
-          {/* Contact Page Disclaimer */}
-          <div className="mt-10 rounded-lg bg-white/5 border border-white/20 px-6 py-4">
-            <p className="text-xs text-gray-300 leading-relaxed">
-              Information submitted through this form is for general inquiry
-              purposes only and does not create an attorney&ndash;client
-              relationship. Do not include confidential or time&ndash;sensitive
-              information. An attorney will contact you if the firm is able to
-              assist with your matter.
-            </p>
-          </div>
         </div>
 
         {/* Contact Details */}
         <div>
           <h2
-            className="text-2xl font-semibold sm:text-3xl"
+            className="text-xl font-semibold sm:text-2xl"
             style={{ fontFamily: "var(--playfair)" }}
           >
-            Contact Details
+            Contact Information
           </h2>
 
-          <p className="mt-4 max-w-md text-sm sm:text-base text-gray-200/90 leading-relaxed">
-            The firm&apos;s Denver office is located in the central downtown
-            corridor. Contact information is provided below.
+          <p className="mt-3 text-sm text-gray-200/80 leading-relaxed">
+            Reach out to Cohen, LLC by phone, email, or in person at our Denver
+            office.
           </p>
 
-          <ul className="mt-6 space-y-3 text-sm sm:text-base text-gray-200/90 leading-relaxed">
-            <li>
-              <span className="font-semibold text-white">Address:</span>
-              <br />
-              <a
-                href="https://www.google.com/maps/place/1600+N+Broadway+Suite+1660+Denver+CO+80202"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-[var(--brand-gold)] transition"
-              >
-                BOK Financial Building
+          <div className="mt-6 space-y-4 text-sm text-gray-200/90">
+            {/* Office Address */}
+            <div>
+              <h3 className="font-semibold text-white">Office</h3>
+              <address className="mt-1 not-italic leading-relaxed">
+                1600 N. Broadway, Suite 1660
                 <br />
-                1600 N Broadway
-                <br />
-                Suite 1660
+                Bok Financial Building
                 <br />
                 Denver, CO 80202
-              </a>
-            </li>
+              </address>
+            </div>
 
-            <li>
-              <span className="font-semibold text-white">Phone:</span>
-              <br />
-              <a
-                href="tel:+13035243636"
-                className="hover:text-[var(--brand-gold)] transition"
-              >
-                303-524-3636
-              </a>
-            </li>
-          </ul>
+            {/* Phone */}
+            <div>
+              <h3 className="font-semibold text-white">Phone</h3>
+              <p className="mt-1">
+                <a
+                  href="tel:+13035243636"
+                  className="hover:text-[var(--brand-gold)] transition"
+                >
+                  (303) 524-3636
+                </a>
+              </p>
+            </div>
+
+            {/* Email */}
+            <div>
+              <h3 className="font-semibold text-white">Email</h3>
+              <p className="mt-1">
+                <a
+                  href="mailto:frontdesk@cohentrial.com"
+                  className="hover:text-[var(--brand-gold)] transition"
+                >
+                  frontdesk@cohentrial.com
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      {/* Divider */}
+
+      {/* Google Maps Embed */}
       <div className="my-10 h-px w-full bg-white/10"></div>
-      {/* Office Location */}
+
       <section className="mt-12">
         <h2
-          className="text-xl font-semibold sm:text-2xl"
+          className="text-2xl sm:text-3xl font-semibold"
           style={{ fontFamily: "var(--playfair)" }}
         >
-          Office Location
+          Our Location
         </h2>
 
-        <p className="mt-3 text-sm text-gray-200/80 leading-relaxed max-w-xl">
-          The Denver office is located in the BOK Financial Building at 1600 N
-          Broadway, Suite 1660, in the downtown corridor. View the location on
-          Google Maps below.
+        <p className="mt-3 text-sm text-gray-200/80 max-w-2xl">
+          We are located in the Bok Financial Building in downtown Denver,
+          Colorado.
         </p>
 
-        {/* Map Container with Link Fallback */}
-        <div className="mt-6">
-          <a
-            href="https://www.google.com/maps/place/1600+N+Broadway+Suite+1660+Denver+CO+80202"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block overflow-hidden rounded-lg border border-white/20 bg-white/5 hover:border-white/30 transition"
-          >
-            <iframe
-              title="Map showing Cohen, LLC Denver office location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.0429892547205!2d-105.00270492346655!3d39.74313029647586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78c4bb0a5a8f%3A0x4e4e4e4e4e4e4e4e!2s1600%20N%20Broadway%2C%20Denver%2C%20CO%2080202!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="h-64 w-full border-0 sm:h-80 pointer-events-none"
-              allowFullScreen
-            />
-          </a>
-          <p className="mt-2 text-xs text-gray-400 text-center">
-            Click map to open in Google Maps •
-            <a
-              href="https://www.google.com/maps/dir//1600+N+Broadway+Suite+1660+Denver+CO+80202"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1 text-[var(--brand-gold)] hover:text-[var(--brand-gold)]/80 underline"
-            >
-              Get Directions
-            </a>
-          </p>
+        <div className="mt-6 rounded-lg overflow-hidden border border-white/10">
+          <iframe
+            title="Cohen, LLC Office Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.566449704082!2d-104.98935842398887!3d39.74454159683326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78d1f3f1e5d1%3A0x8e9f3e7e7e7e7e7e!2s1600%20N%20Broadway%2C%20Denver%2C%20CO%2080202!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
+
+      {/* Disclaimer */}
+      <div className="mt-12 rounded-md bg-[var(--brand-navy)]/20 border border-white/10 p-6">
+        <p className="text-xs text-gray-300/80 leading-relaxed">
+          <strong className="text-white">Important:</strong> The use of email or
+          this contact form for communication with the firm or any individual
+          member of the firm does not establish an attorney-client relationship.
+          Confidential or time-sensitive information should not be sent through
+          this form. Please contact our office directly if you need immediate
+          legal assistance.
+        </p>
+      </div>
     </main>
   );
 }

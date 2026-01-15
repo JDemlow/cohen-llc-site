@@ -45,14 +45,13 @@ export default function PracticeAreasPage() {
           <p className="mt-4 max-w-2xl text-sm text-gray-200/90 leading-relaxed">
             We represent businesses in complex commercial disputes, including
             matters involving intellectual property, restructuring, debt
-            recovery, shareholder conflicts, class actions, and municipal
-            finance. Our attorneys handle cases at every stage of litigation in
-            state and federal courts.
+            recovery, shareholder conflicts, and municipal finance. Our
+            attorneys handle cases at every stage of litigation in state and
+            federal courts.
           </p>
 
           <ul className="mt-5 list-disc pl-5 marker:text-gray-400 text-sm text-gray-200/80 space-y-1.5">
             <li>Intellectual property disputes</li>
-            <li>Class action and mass tort litigation</li>
             <li>Restructuring and debt recovery matters</li>
             <li>Shareholder and partnership conflicts</li>
             <li>Municipal finance litigation</li>
@@ -82,10 +81,11 @@ export default function PracticeAreasPage() {
           </p>
 
           <ul className="mt-5 list-disc pl-5 marker:text-gray-400 text-sm text-gray-200/80 space-y-1.5">
-            <li>FDD disclosure and compliance disputes</li>
+            <li>Franchise litigation - franchisees and franchisors</li>
             <li>Franchisee–franchisor conflict resolution</li>
             <li>Supply chain and vendor-related matters</li>
             <li>Representation in multi-party franchise actions</li>
+            <li>FDD disclosure and compliance disputes</li>
           </ul>
         </Card>
       </div>
@@ -198,19 +198,6 @@ export default function PracticeAreasPage() {
         <p className="mt-4 text-center text-sm text-gray-200/70 italic">
           Our Denver office in the BOK Financial Building
         </p>
-      </div>
-
-      {/* Bottom CTA */}
-      <div className="mt-24 pt-16 border-t border-white/10 text-center">
-        <p className="text-sm text-gray-200/80 tracking-wide">
-          Ready to discuss your legal matter?
-        </p>
-
-        <div className="mt-6">
-          <PrimaryButton href="/contact">
-            Schedule a Free Consultation
-          </PrimaryButton>
-        </div>
       </div>
     </main>
   );

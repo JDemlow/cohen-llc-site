@@ -53,12 +53,6 @@ export default function HomePage() {
             clients in transactional matters including franchising, mergers,
             acquisitions, and business legal strategy.
           </p>
-
-          <div className="mt-8 flex justify-center">
-            <PrimaryButton href="/contact">
-              Schedule a Free Consultation
-            </PrimaryButton>
-          </div>
         </div>
       </section>
 
@@ -97,8 +91,7 @@ export default function HomePage() {
             </h3>
             <p className="mt-2 text-sm text-gray-200/80">
               Business disputes including intellectual property, restructuring,
-              debt recovery, shareholder conflicts, class actions, and municipal
-              finance.
+              debt recovery, shareholder conflicts, and municipal finance.
             </p>
           </Link>
 
