@@ -178,11 +178,18 @@ export default function ContactPage() {
             <div>
               <h3 className="font-semibold text-white">Office</h3>
               <address className="mt-1 not-italic leading-relaxed">
-                1600 N. Broadway, Suite 1660
-                <br />
-                Bok Financial Building
-                <br />
-                Denver, CO 80202
+                <a
+                  href="https://www.google.com/maps/place/1600+N+Broadway+Suite+1660,+Denver,+CO+80202"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[var(--brand-gold)] transition"
+                >
+                  1600 N. Broadway, Suite 1660
+                  <br />
+                  BOK Financial Building
+                  <br />
+                  Denver, CO 80202
+                </a>
               </address>
             </div>
 
@@ -227,7 +234,7 @@ export default function ContactPage() {
         </h2>
 
         <p className="mt-3 text-sm text-gray-200/80 max-w-2xl">
-          We are located in the Bok Financial Building in downtown Denver,
+          We are located in the BOK Financial Building in downtown Denver,
           Colorado.
         </p>
 
