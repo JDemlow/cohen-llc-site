@@ -169,8 +169,7 @@ export default function ContactPage() {
           </h2>
 
           <p className="mt-3 text-sm text-gray-200/80 leading-relaxed">
-            Reach out to Cohen, LLC by phone, email, or in person at our Denver
-            office.
+            Reach out to Cohen, LLC by phone or in person at our Denver office.
           </p>
 
           <div className="mt-6 space-y-4 text-sm text-gray-200/90">
@@ -202,19 +201,6 @@ export default function ContactPage() {
                   className="hover:text-[var(--brand-gold)] transition"
                 >
                   (303) 524-3636
-                </a>
-              </p>
-            </div>
-
-            {/* Email */}
-            <div>
-              <h3 className="font-semibold text-white">Email</h3>
-              <p className="mt-1">
-                <a
-                  href="mailto:frontdesk@cohentrial.com"
-                  className="hover:text-[var(--brand-gold)] transition"
-                >
-                  frontdesk@cohentrial.com
                 </a>
               </p>
             </div>
@@ -255,9 +241,9 @@ export default function ContactPage() {
       {/* Disclaimer */}
       <div className="mt-12 rounded-md bg-[var(--brand-navy)]/20 border border-white/10 p-6">
         <p className="text-xs text-gray-300/80 leading-relaxed">
-          <strong className="text-white">Important:</strong> The use of email or
-          this contact form for communication with the firm or any individual
-          member of the firm does not establish an attorney-client relationship.
+          <strong className="text-white">Important:</strong> The use of this
+          contact form for communication with the firm or any individual member
+          of the firm does not establish an attorney-client relationship.
           Confidential or time-sensitive information should not be sent through
           this form. Please contact our office directly if you need immediate
           legal assistance.
