@@ -420,13 +420,24 @@ export default function AboutPage() {
 
               <ul className="space-y-1 text-sm">
                 <li>
-                  • Gannon University (B.A. in Legal Studies, ABA-accredited,
+                  • Gannon University (B.A. in Legal Studies, ABA-recognized,
                   2009)
                 </li>
                 <li>
-                  • Gannon University (Paralegal Certificate, ABA-accredited,
+                  • Gannon University (Paralegal Certificate, ABA-recognized,
                   2009)
                 </li>
+              </ul>
+
+              <h3
+                className="text-lg font-semibold mt-8 mb-3"
+                style={{ fontFamily: "var(--playfair)" }}
+              >
+                Licenses
+              </h3>
+
+              <ul className="space-y-1 text-sm">
+                <li>• Notary Public, State of Colorado (Commissioned)</li>
               </ul>
             </div>
           </div>
